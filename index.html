@@ -3,199 +3,262 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>S55 · Uniformes de Fútbol — Precio por mayor desde la primera unidad</title>
-<meta name="description" content="Uniformes de fútbol calidad premium, bordados y estampados, a precio de por mayor desde la primera unidad. Tallas S, M, L, XL. Envíos a toda el Área Metropolitana de Bucaramanga.">
-<meta name="theme-color" content="#08090a">
+<title id="pageTitle">S55 · Camisetas Retro — Colección de fútbol clásico</title>
+<meta id="pageDesc" name="description" content="Camisetas retro de fútbol de clubes y selecciones históricas. Disponibilidad limitada por talla. Envíos a toda el Área Metropolitana de Bucaramanga.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#08090a;
-    --bg-soft:#111214;
-    --card:#16171a;
-    --line:rgba(255,255,255,.09);
-    --text:#f4f3f1;
-    --muted:#9a9a9d;
-    --accent:#ffd23f;
-    --accent-dim:#4a3f14;
-    --green:#3fae62;
-    font-size:16px;
+    --bg:#0a0a0b; --bg-soft:#131315; --card:#18181a; --card-2:#1e1e21;
+    --line:rgba(255,255,255,.10); --text:#f5f4f2; --muted:#9b9a9d;
+    --red:#e0202f; --red-dim:#3a1114; --green:#2a9d5c; --gold:#f0b429; font-size:16px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,h4{
-    font-family:'Archivo Black','Arial Black',sans-serif;
-    font-weight:400;
-    letter-spacing:-.01em;
-    line-height:1.05;
-    text-transform:uppercase;
-  }
-  em{font-style:normal;color:var(--accent)}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,h5,.logo,.btn,.navlinks>a,.navlinks button,.filter-pill,.faq-q,
+  .cat-body h4,.rank-body h4,.price-card h4,.price-card .amount,.talla-card .t,
+  .zone-pill,.eyebrow,.cart-btn,.mega-col h6,.mega-link,.mobile-acc button,.shop-banner h1,
+  .crumb,.chip,.fsub-title{font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;letter-spacing:.02em}
+  h1,h2,h3,h4{line-height:1.02;text-transform:uppercase}
+  em{font-style:normal;color:var(--red)}
   a{color:inherit;text-decoration:none}
   ul{list-style:none}
   img{display:block;max-width:100%}
-  .container{max-width:1140px;margin:0 auto;padding:0 24px}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
-    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--accent);font-weight:700;margin-bottom:14px;
-  }
-  .eyebrow::before{content:"";width:18px;height:2px;background:var(--accent)}
+  button{font:inherit;background:none;border:none;color:inherit;cursor:pointer}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+  .eyebrow::before{content:"";width:20px;height:2px;background:var(--red)}
   section{padding:88px 0}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    padding:15px 28px;border-radius:2px;font-weight:700;
-    font-size:.9rem;letter-spacing:.02em;cursor:pointer;border:none;
-    transition:transform .15s ease, background .15s ease;
-  }
-  .btn-primary{background:var(--accent);color:#141400}
-  .btn-primary:hover{transform:translateY(-2px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;border-radius:2px;font-size:1rem;letter-spacing:.03em;cursor:pointer;border:none;transition:transform .15s ease,background .15s ease}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary:hover{transform:translateY(-2px);background:#f22c3c}
   .btn-outline{background:transparent;color:var(--text);border:1px solid var(--line)}
-  .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-outline:hover{border-color:var(--red);color:var(--red)}
+  .crown{display:block;margin:0 auto}
 
-  /* HEADER */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(8,9,10,.85);backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1140px;margin:0 auto}
-  .logo{font-family:'Archivo Black',sans-serif;font-size:1.3rem;letter-spacing:.02em}
-  .navlinks{display:flex;gap:32px;font-size:.85rem;color:var(--muted)}
-  .navlinks a:hover{color:var(--text)}
-  .cart-btn{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);padding:10px 16px;border-radius:2px;font-size:.85rem;cursor:pointer}
-  .cart-count{background:var(--accent);color:#141400;font-weight:800;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:.7rem}
-  @media(max-width:800px){.navlinks{display:none}}
+  /* HEADER + MEGA MENU */
+  header{position:sticky;top:0;z-index:200;background:rgba(10,10,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1180px;margin:0 auto;gap:20px}
+  .logo{font-size:1.4rem;display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .logo svg{width:20px;height:16px}
+  .navlinks{display:flex;gap:6px;font-size:.82rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;align-items:center}
+  .navlinks>a,.navlinks>.nav-item>button{padding:10px 12px;display:inline-block}
+  .navlinks>a:hover,.navlinks>.nav-item>button:hover{color:var(--red)}
+  .nav-item{position:relative}
+  .nav-item>button{display:flex;align-items:center;gap:5px}
+  .nav-item .caret{font-size:.6rem;transition:transform .15s}
+  .nav-item:hover .caret{transform:rotate(180deg)}
+  .mega-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:560px;max-height:70vh;overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px;display:none;box-shadow:0 20px 50px rgba(0,0,0,.5);grid-template-columns:1.3fr 1fr;gap:30px}
+  .nav-item:hover .mega-menu,.nav-item:focus-within .mega-menu{display:grid}
+  .mega-col h6{font-size:.72rem;color:var(--muted);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase}
+  .mega-list{display:flex;flex-direction:column;gap:2px}
+  .mega-link{font-family:'Inter',sans-serif;font-size:.88rem;color:var(--text);padding:7px 8px;border-radius:4px;text-transform:none;letter-spacing:0}
+  .mega-link:hover{background:var(--card-2);color:var(--red)}
+  .mega-link .count{color:var(--muted);font-size:.75rem;margin-left:4px}
+  .mega-country-group{margin-bottom:16px}
+  .mega-country-group:last-child{margin-bottom:0}
+  .search-wrap{position:relative;flex:1;max-width:320px}
+  .search-input{width:100%;background:var(--card);border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:20px;font-family:'Inter',sans-serif;font-size:.85rem}
+  .search-input:focus{outline:none;border-color:var(--red)}
+  .search-input::placeholder{color:var(--muted)}
+  .header-right{display:flex;align-items:center;gap:14px}
+  .cart-btn{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);padding:10px 18px;border-radius:2px;font-size:.85rem;cursor:pointer;text-transform:uppercase;letter-spacing:.04em}
+  .cart-count{background:var(--red);color:#fff;font-family:'Inter',sans-serif;font-weight:800;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:.7rem}
+  .mobile-toggle{display:none;background:var(--card);border:1px solid var(--line);padding:10px 14px;border-radius:4px;font-size:1rem}
+  @media(max-width:960px){.navlinks{display:none}.search-wrap{display:none}.mobile-toggle{display:block}}
+
+  /* MOBILE DRAWER */
+  .mdrawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:299;display:none}
+  .mdrawer-overlay.open{display:block}
+  .mdrawer{position:fixed;top:0;left:-340px;width:320px;max-width:88vw;height:100%;background:var(--bg-soft);z-index:300;transition:left .3s ease;border-right:1px solid var(--line);overflow-y:auto}
+  .mdrawer.open{left:0}
+  .mdrawer-head{padding:20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .mdrawer-body{padding:10px 14px 30px}
+  .mdrawer .search-input{width:100%;margin:10px 0 16px}
+  .mobile-acc{border-bottom:1px solid var(--line)}
+  .mobile-acc>button{width:100%;display:flex;justify-content:space-between;align-items:center;padding:16px 6px;font-size:.95rem;text-transform:uppercase}
+  .mobile-acc>button .plus{font-family:'Inter',sans-serif;color:var(--red)}
+  .mobile-acc-panel{display:none;padding:0 6px 16px 16px}
+  .mobile-acc.open .mobile-acc-panel{display:block}
+  .mobile-acc.open>button .plus{transform:rotate(45deg)}
+  .mobile-acc-panel a{display:block;font-family:'Inter',sans-serif;font-size:.85rem;color:var(--muted);padding:8px 0}
+  .mobile-acc-panel a:hover{color:var(--red)}
+  .mobile-sub-title{font-family:'Inter',sans-serif;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:10px 0 4px}
 
   /* HERO */
-  .hero{padding:100px 0 60px;position:relative;overflow:hidden}
-  .hero::before{
-    content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;
-    background:radial-gradient(circle, var(--accent-dim) 0%, transparent 70%);
-    opacity:.5;pointer-events:none;
-  }
-  .hero-inner{position:relative;z-index:1}
-  .hero h1{font-size:clamp(2.6rem,7vw,5.2rem);max-width:820px}
-  .hero p.lead{color:var(--muted);font-size:1.1rem;max-width:520px;margin:22px 0 30px}
+  .hero{padding:80px 0 60px;position:relative;overflow:hidden;text-align:center}
+  .hero::before{content:"";position:absolute;top:-260px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,var(--red-dim) 0%,transparent 70%);opacity:.7;pointer-events:none}
+  .hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+  .hero .crown{width:34px;height:28px;margin-bottom:6px}
+  .hero .brandmark{font-size:1.2rem;letter-spacing:.08em;margin-bottom:28px;color:var(--muted)}
+  .hero .eyebrow{justify-content:center}
+  .hero h1{font-size:clamp(3rem,8.5vw,6.6rem);max-width:900px}
+  .hero p.lead{color:var(--muted);font-family:'Inter',sans-serif;font-size:1.1rem;max-width:560px;margin:22px 0 30px}
   .hero p.lead strong{color:var(--text)}
-  .price-row{display:flex;flex-wrap:wrap;gap:28px;margin-bottom:34px}
-  .price-chip{font-size:.9rem;color:var(--muted)}
-  .price-chip b{color:var(--accent);font-size:1.1rem;display:block}
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
-  .hero-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .jersey-card{
-    aspect-ratio:3/4;border-radius:4px;position:relative;overflow:hidden;
-    display:flex;align-items:flex-end;padding:16px;border:1px solid var(--line);
-  }
-  .jersey-card span{font-size:.75rem;color:#fff;font-weight:700;text-shadow:0 2px 6px rgba(0,0,0,.6)}
-  .jersey-1{background:linear-gradient(155deg,#0a2a5e 0%,#facc15 100%)}
-  .jersey-2{background:linear-gradient(155deg,#111 0%,#3fae62 100%)}
-  .jersey-3{background:linear-gradient(155deg,#7a1c2b 0%,#0d0d0d 100%)}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:56px}
+  .hero-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:100%}
+  .hero-gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;border-radius:4px;border:1px solid var(--line)}
+  @media(max-width:700px){.hero-gallery{grid-template-columns:repeat(2,1fr)}}
 
   /* MARQUEE */
   .marquee-wrap{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;overflow:hidden;background:var(--bg-soft)}
-  .marquee{display:flex;gap:14px;white-space:nowrap;animation:scroll 26s linear infinite;width:max-content}
+  .marquee{display:flex;gap:14px;white-space:nowrap;animation:scroll 26s linear infinite;width:max-content;font-family:'Inter',sans-serif}
   .marquee span{font-size:.8rem;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
-  .marquee span.dot{color:var(--accent)}
+  .marquee span.dot{color:var(--red)}
   @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* FEATURES */
   .features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
   .feature{background:var(--bg);padding:34px 26px}
-  .feature h3{font-size:1rem;margin-bottom:10px;text-transform:none;font-family:'Archivo Black',sans-serif}
-  .feature p{color:var(--muted);font-size:.88rem}
+  .feature h3{font-size:1.15rem;margin-bottom:10px}
+  .feature p{color:var(--muted);font-family:'Inter',sans-serif;font-size:.88rem}
   @media(max-width:900px){.features-grid{grid-template-columns:repeat(2,1fr)}}
 
   .section-head{margin-bottom:46px}
-  .section-head h2{font-size:clamp(1.8rem,4vw,2.6rem)}
-  .section-head p{color:var(--muted);max-width:520px;margin-top:12px}
+  .section-head h2{font-size:clamp(2.2rem,5vw,3.4rem)}
+  .section-head p{color:var(--muted);font-family:'Inter',sans-serif;max-width:520px;margin-top:12px}
 
   /* RANKING */
-  .ranking{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .rank-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative}
-  .rank-num{position:absolute;top:14px;left:14px;background:var(--accent);color:#141400;font-weight:800;font-size:.8rem;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
-  .rank-img{aspect-ratio:4/5}
-  .rank-body{padding:18px}
-  .rank-body h4{font-size:.95rem;text-transform:none;font-family:'Archivo Black',sans-serif;margin-bottom:4px}
-  .rank-body span{color:var(--muted);font-size:.8rem}
+  .ranking{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .rank-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex}
+  .rank-img{width:44%;flex-shrink:0;aspect-ratio:1/1}
+  .rank-img img{width:100%;height:100%;object-fit:cover}
+  .rank-body{padding:18px 20px}
+  .rank-body h4{font-size:1rem;margin-bottom:4px}
+  .rank-body span{color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;display:block;margin-top:6px}
   @media(max-width:800px){.ranking{grid-template-columns:1fr}}
 
-  /* CATALOGO */
-  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
-  .filter-pill{padding:9px 18px;border:1px solid var(--line);border-radius:30px;font-size:.8rem;color:var(--muted);cursor:pointer}
-  .filter-pill.active{background:var(--accent);color:#141400;border-color:var(--accent);font-weight:700}
-  .catalog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .cat-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
-  .cat-img{aspect-ratio:3/4}
+  /* SHOP / CATALOGO */
+  .shop-banner{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:40px;margin-bottom:34px;position:relative;overflow:hidden}
+  .shop-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,var(--red-dim),transparent 60%)}
+  .crumb-row{position:relative;display:flex;gap:8px;align-items:center;font-family:'Inter',sans-serif;font-size:.78rem;color:var(--muted);margin-bottom:16px;flex-wrap:wrap}
+  .crumb-row a:hover{color:var(--red)}
+  .crumb-row .sep{opacity:.5}
+  .shop-banner h1{position:relative;font-size:clamp(2rem,5vw,3rem);margin-bottom:8px}
+  .shop-banner .sub{position:relative;color:var(--muted);font-family:'Inter',sans-serif;font-size:.95rem;max-width:560px}
+  .chip-row{position:relative;display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+  .chip{padding:9px 18px;border:1px solid var(--line);border-radius:30px;font-size:.75rem;color:var(--muted);cursor:pointer;text-transform:uppercase;background:var(--bg)}
+  .chip.active{background:var(--red);color:#fff;border-color:var(--red)}
+  .chip .count{font-family:'Inter',sans-serif;opacity:.7;margin-left:3px}
+
+  .shop-layout{display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:start}
+  .filter-sidebar{position:sticky;top:90px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px}
+  .fgroup{margin-bottom:22px}
+  .fgroup:last-child{margin-bottom:0}
+  .fgroup-label{font-family:'Inter',sans-serif;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+  .fopt{display:flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:.83rem;color:var(--muted);padding:5px 0;cursor:pointer}
+  .fopt:hover{color:var(--text)}
+  .fopt input{accent-color:var(--red)}
+  .fopt.active-opt{color:var(--red)}
+  .clear-filters{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--red);margin-top:10px;text-decoration:underline;cursor:pointer}
+  .mobile-filter-toggle{display:none;margin-bottom:20px}
+  @media(max-width:860px){
+    .shop-layout{grid-template-columns:1fr}
+    .filter-sidebar{position:fixed;top:0;left:-100%;width:82vw;height:100%;z-index:250;overflow-y:auto;border-radius:0;transition:left .25s ease}
+    .filter-sidebar.open{left:0}
+    .mobile-filter-toggle{display:inline-flex}
+  }
+  .filter-close{display:none}
+  @media(max-width:860px){.filter-close{display:block;font-family:'Inter',sans-serif;text-align:right;color:var(--muted);margin-bottom:14px}}
+
+  .catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .cat-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative;
+    opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease,box-shadow .25s ease,border-color .25s ease}
+  .cat-card.in-view{opacity:1;transform:translateY(0)}
+  .cat-card:hover{border-color:rgba(255,255,255,.22);box-shadow:0 14px 30px rgba(0,0,0,.45);transform:translateY(-4px)}
+  .cat-img{aspect-ratio:1/1;position:relative;background:#111;overflow:hidden}
+  .cat-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .cat-card:hover .cat-img img{transform:scale(1.06)}
+  .badge{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;font-family:'Inter',sans-serif;font-size:.65rem;font-weight:700;padding:4px 9px;border-radius:3px;text-transform:uppercase;z-index:2}
+  .badge.low{background:#c77c1f;animation:pulseBadge 1.8s ease-in-out infinite}
+  .badge.out{background:#555}
+  @keyframes pulseBadge{0%,100%{box-shadow:0 0 0 0 rgba(199,124,31,.55)}50%{box-shadow:0 0 0 6px rgba(199,124,31,0)}}
   .cat-body{padding:14px}
-  .cat-body h4{font-size:.82rem;text-transform:none;font-family:'Archivo Black',sans-serif}
-  .cat-body .price{color:var(--accent);font-size:.85rem;font-weight:700;margin-top:6px}
+  .cat-body h4{font-size:.84rem;line-height:1.15}
+  .cat-body .meta{font-family:'Inter',sans-serif;color:var(--muted);font-size:.72rem;margin-top:5px;text-transform:uppercase;letter-spacing:.03em}
+  .cat-body .price{color:var(--gold);font-family:'Inter',sans-serif;font-size:1rem;font-weight:800;margin-top:8px}
+  .size-row{display:flex;gap:5px;margin-top:9px;flex-wrap:wrap}
+  .size-chip{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:700;padding:4px 7px;border-radius:3px;border:1px solid var(--line);color:var(--muted);background:none;cursor:default;transition:transform .15s ease,background .15s ease,border-color .15s ease}
+  .size-chip.avail{border-color:var(--green);color:var(--green);cursor:pointer}
+  .size-chip.avail:hover{background:var(--green);color:#0a0a0b;transform:translateY(-2px) scale(1.06)}
+  .size-chip.low-stock{border-color:#c77c1f;color:#c77c1f;cursor:pointer}
+  .size-chip.low-stock:hover{background:#c77c1f;color:#0a0a0b;transform:translateY(-2px) scale(1.06)}
+  .size-chip.none{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+  .scarcity-note{font-family:'Inter',sans-serif;font-size:.66rem;color:var(--muted);margin-top:7px;display:flex;align-items:center;gap:5px}
+  .scarcity-note::before{content:"";width:6px;height:6px;border-radius:50%;background:#c77c1f;flex-shrink:0;animation:pulseDot 1.6s ease-in-out infinite}
+  @keyframes pulseDot{0%,100%{opacity:1}50%{opacity:.3}}
+  .empty-state{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--muted);font-family:'Inter',sans-serif}
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+  .reveal.in-view{opacity:1;transform:translateY(0)}
+  .feature{transition:border-color .2s ease,transform .2s ease}
+  .rank-card,.price-card,.talla-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+  .rank-card:hover,.price-card:hover,.talla-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.4)}
+  .btn{transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+  .btn:active{transform:scale(.96)}
   @media(max-width:900px){.catalog-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:500px){.catalog-grid{grid-template-columns:1fr 1fr}}
 
   /* PRECIOS */
-  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:760px;margin:0 auto}
   .price-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:32px 26px;position:relative}
-  .price-card.featured{border-color:var(--accent)}
-  .price-tag{position:absolute;top:-13px;left:26px;background:var(--accent);color:#141400;font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:20px;letter-spacing:.04em}
-  .price-card h4{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;font-family:inherit;font-weight:700}
-  .price-card .amount{font-family:'Archivo Black',sans-serif;font-size:2.4rem;margin-bottom:2px}
-  .price-card .unit{color:var(--muted);font-size:.85rem;margin-bottom:20px}
-  .price-card ul li{color:var(--muted);font-size:.85rem;padding:7px 0;border-top:1px solid var(--line)}
+  .price-card.featured{border-color:var(--red)}
+  .price-tag{position:absolute;top:-13px;left:26px;background:var(--red);color:#fff;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:20px;letter-spacing:.04em}
+  .price-card h4{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px}
+  .price-card .amount{font-size:2.6rem;margin-bottom:2px}
+  .price-card .unit{color:var(--muted);font-family:'Inter',sans-serif;font-size:.85rem;margin-bottom:20px}
+  .price-card ul li{color:var(--muted);font-family:'Inter',sans-serif;font-size:.85rem;padding:7px 0;border-top:1px solid var(--line)}
   .price-card ul li:first-child{border-top:none}
-  @media(max-width:900px){.price-grid{grid-template-columns:1fr}}
+  @media(max-width:700px){.price-grid{grid-template-columns:1fr}}
 
   /* CALIDAD */
   .calidad-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   .calidad-list li{padding:20px 0;border-top:1px solid var(--line)}
   .calidad-list li:first-child{border-top:none}
-  .calidad-list h4{font-size:.95rem;text-transform:none;font-family:'Archivo Black',sans-serif;margin-bottom:6px}
-  .calidad-list p{color:var(--muted);font-size:.85rem}
+  .calidad-list h4{font-size:1.05rem;margin-bottom:6px}
+  .calidad-list p{color:var(--muted);font-family:'Inter',sans-serif;font-size:.85rem}
   .calidad-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .cg{border-radius:4px;aspect-ratio:1/1;border:1px solid var(--line)}
-  .cg1{background:linear-gradient(160deg,#7a1c2b,#111)}
-  .cg2{background:linear-gradient(160deg,#0a2a5e,#facc15);margin-top:24px}
-  .cg3{background:linear-gradient(160deg,#111,#3fae62)}
-  .cg4{background:linear-gradient(160deg,#000,#fff2);margin-top:-24px}
+  .calidad-gallery img{aspect-ratio:1/1;object-fit:cover;border-radius:4px;border:1px solid var(--line)}
+  .calidad-gallery img:nth-child(2){margin-top:24px}
+  .calidad-gallery img:nth-child(4){margin-top:-24px}
   @media(max-width:900px){.calidad-wrap{grid-template-columns:1fr}.calidad-gallery{order:-1}}
 
   /* TALLAS */
   .tallas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
   .talla-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px;text-align:center}
-  .talla-card .t{font-family:'Archivo Black',sans-serif;font-size:1.8rem;color:var(--accent)}
-  .talla-card p{color:var(--muted);font-size:.78rem;margin-top:6px}
-  .tallas-note{color:var(--muted);font-size:.85rem;margin-top:24px;max-width:560px}
+  .talla-card .t{font-size:2.2rem;color:var(--red)}
+  .talla-card p{color:var(--muted);font-family:'Inter',sans-serif;font-size:.78rem;margin-top:6px}
+  .tallas-note{color:var(--muted);font-family:'Inter',sans-serif;font-size:.85rem;margin-top:24px;max-width:560px}
   @media(max-width:700px){.tallas-grid{grid-template-columns:repeat(2,1fr)}}
 
   /* ENVIOS */
   .envios-box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
   .zone-pills{display:flex;gap:10px;flex-wrap:wrap}
-  .zone-pill{border:1px solid var(--line);padding:8px 16px;border-radius:20px;font-size:.8rem;color:var(--muted)}
+  .zone-pill{border:1px solid var(--line);padding:8px 18px;border-radius:20px;font-size:.78rem;color:var(--muted)}
 
   /* FAQ */
   .faq-item{border-top:1px solid var(--line);padding:22px 0}
   .faq-item:last-child{border-bottom:1px solid var(--line)}
-  .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:700;font-size:.95rem}
-  .faq-a{color:var(--muted);font-size:.88rem;margin-top:12px;display:none;max-width:640px}
+  .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:1rem}
+  .faq-a{color:var(--muted);font-family:'Inter',sans-serif;font-size:.88rem;margin-top:12px;display:none;max-width:640px}
   .faq-item.open .faq-a{display:block}
   .faq-item.open .faq-q .plus{transform:rotate(45deg)}
-  .plus{transition:transform .2s;font-size:1.3rem;color:var(--accent)}
+  .plus{transition:transform .2s;font-size:1.3rem;color:var(--red);font-family:'Inter',sans-serif}
 
   /* CTA */
   .cta-final{text-align:center;padding:100px 24px;background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .cta-final h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px}
-  .cta-final p{color:var(--muted);margin-bottom:30px}
+  .cta-final h2{font-size:clamp(2.4rem,6vw,3.6rem);margin-bottom:16px}
+  .cta-final p{color:var(--muted);font-family:'Inter',sans-serif;margin-bottom:30px}
 
   /* FOOTER */
   footer{padding:60px 0 30px}
   .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:50px}
-  .foot-grid h5{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
-  .foot-grid a,.foot-grid p{display:block;color:var(--muted);font-size:.85rem;margin-bottom:10px}
-  .foot-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;color:var(--muted);font-size:.78rem;flex-wrap:wrap;gap:10px}
+  .foot-grid h5{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px}
+  .foot-grid a,.foot-grid p{display:block;font-family:'Inter',sans-serif;color:var(--muted);font-size:.85rem;margin-bottom:10px}
+  .foot-grid a:hover{color:var(--red)}
+  .foot-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;font-family:'Inter',sans-serif;color:var(--muted);font-size:.78rem;flex-wrap:wrap;gap:10px}
   @media(max-width:800px){.foot-grid{grid-template-columns:1fr 1fr}}
 
   /* CART DRAWER */
@@ -203,21 +266,18 @@
   .drawer-overlay.open{display:block}
   .drawer{position:fixed;top:0;right:-420px;width:400px;max-width:90vw;height:100%;background:var(--bg-soft);z-index:100;transition:right .3s ease;border-left:1px solid var(--line);display:flex;flex-direction:column}
   .drawer.open{right:0}
-  .drawer-head{padding:22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-  .drawer-body{padding:22px;flex:1;overflow-y:auto;color:var(--muted);font-size:.9rem}
+  .drawer-head{padding:22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:1.1rem}
+  .drawer-body{padding:22px;flex:1;overflow-y:auto;color:var(--muted);font-family:'Inter',sans-serif;font-size:.9rem}
   .drawer-foot{padding:22px;border-top:1px solid var(--line)}
-  .drawer-row{display:flex;justify-content:space-between;font-size:.85rem;padding:8px 0;color:var(--muted)}
+  .drawer-row{display:flex;justify-content:space-between;font-family:'Inter',sans-serif;font-size:.85rem;padding:8px 0;color:var(--muted)}
   .drawer-row b{color:var(--text)}
-  .close-x{cursor:pointer;font-size:1.4rem;color:var(--muted)}
+  .close-x{cursor:pointer;font-size:1.4rem;color:var(--muted);font-family:'Inter',sans-serif}
 
   @media(max-width:700px){
-    section{padding:60px 0}
-    .hero{padding:70px 0 40px}
-    .hero-gallery{grid-template-columns:repeat(3,1fr)}
+    section{padding:56px 0}
+    .hero{padding:56px 0 40px}
     .features-grid{grid-template-columns:1fr}
     .ranking{grid-template-columns:1fr}
-    .catalog-grid{grid-template-columns:repeat(2,1fr)}
-    .price-grid{grid-template-columns:1fr}
     .tallas-grid{grid-template-columns:repeat(2,1fr)}
     .foot-grid{grid-template-columns:1fr 1fr}
   }
@@ -227,51 +287,54 @@
 
 <header>
   <div class="nav">
-    <a href="#top" class="logo">S55</a>
-    <nav class="navlinks">
-      <a href="#top-mes">Top del mes</a>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#precios">Precios</a>
-      <a href="#calidad">Calidad</a>
-      <a href="#envios">Envíos</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <button class="cart-btn" onclick="openCart()">Carrito <span class="cart-count" id="cartCount">0</span></button>
+    <a href="#/" class="logo">
+      <svg viewBox="0 0 24 20" fill="none"><path d="M2 6L7 10L12 3L17 10L22 6L20 17H4L2 6Z" stroke="#f5f4f2" stroke-width="1.6" fill="none"/></svg>
+      S55
+    </a>
+    <nav class="navlinks" id="desktopNav"></nav>
+    <div class="header-right">
+      <div class="search-wrap">
+        <input class="search-input" id="headerSearch" type="text" placeholder="Buscar: club, país, año, tipo…">
+      </div>
+      <button class="cart-btn" onclick="openCart()">Carrito <span class="cart-count" id="cartCount">0</span></button>
+      <button class="mobile-toggle" onclick="openMobileMenu()">☰</button>
+    </div>
   </div>
 </header>
 
+<div class="mdrawer-overlay" id="mdrawerOverlay" onclick="closeMobileMenu()"></div>
+<div class="mdrawer" id="mdrawer">
+  <div class="mdrawer-head"><strong>Menú</strong><span class="close-x" onclick="closeMobileMenu()">&times;</span></div>
+  <div class="mdrawer-body">
+    <input class="search-input" id="mobileSearch" type="text" placeholder="Buscar: club, país, año, tipo…">
+    <div id="mobileAccordion"></div>
+  </div>
+</div>
+
 <section id="top" class="hero">
   <div class="container hero-inner">
-    <div class="eyebrow">Temporada 2026 · Conjunto camiseta + pantaloneta</div>
-    <h1>Uniformes de <em>fútbol</em></h1>
-    <p class="lead">Calidad premium con <strong>bordados y estampados</strong>, a <strong>precio de por mayor desde la primera unidad.</strong></p>
-    <div class="price-row">
-      <div class="price-chip"><b>$39.900</b>precio por mayor desde 1 unidad</div>
-      <div class="price-chip"><b>$34.900 c/u</b>desde 5 unidades — mezcla equipos y tallas</div>
-    </div>
+    <svg class="crown" viewBox="0 0 24 20" fill="none"><path d="M2 6L7 10L12 3L17 10L22 6L20 17H4L2 6Z" stroke="#f5f4f2" stroke-width="1.4" fill="none"/></svg>
+    <div class="brandmark">S55</div>
+    <div class="eyebrow">Colección retro · Clubes y selecciones históricas</div>
+    <h1>Camisetas <em>retro</em></h1>
+    <p class="lead">Piezas de colección de clubes y selecciones de todas las épocas. <strong>Unidades limitadas por talla</strong> — cuando se agota una referencia, no vuelve.</p>
     <div class="hero-ctas">
-      <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
-      <a href="#top-mes" class="btn btn-outline">Lo más pedido</a>
+      <a href="#/catalogo" class="btn btn-primary">Ver colección</a>
+      <a href="#top-mes" class="btn btn-outline">Pocas unidades</a>
     </div>
-    <div class="hero-gallery">
-      <div class="jersey-card jersey-1"><span>Boca Juniors · Local</span></div>
-      <div class="jersey-card jersey-2"><span>Santos · Local</span></div>
-      <div class="jersey-card jersey-3"><span>Fluminense · Local</span></div>
-    </div>
+    <div class="hero-gallery" id="heroGallery"></div>
   </div>
 </section>
 
-<div class="marquee-wrap">
-  <div class="marquee" id="marquee"></div>
-</div>
+<div class="marquee-wrap"><div class="marquee" id="marquee"></div></div>
 
 <section>
   <div class="container">
     <div class="features-grid">
-      <div class="feature"><h3>Bordados premium</h3><p>Escudos y logos bordados en hilo, no impresos. Puntada cerrada que no se levanta con el lavado.</p></div>
-      <div class="feature"><h3>Estampados que duran</h3><p>Sublimación y transfer de alta densidad: los patrocinios no se agrietan ni se decoloran.</p></div>
-      <div class="feature"><h3>Mayor desde 1 unidad</h3><p>No exigimos pedido mínimo. Pagas precio de mayorista aunque lleves un solo conjunto.</p></div>
-      <div class="feature"><h3>Envíos área metropolitana</h3><p>Bucaramanga, Floridablanca, Girón y Piedecuesta. Coordinamos entrega por WhatsApp.</p></div>
+      <div class="feature reveal"><h3>Piezas originales de época</h3><p>Diseños tal como se vieron en la temporada que representan, sin reinterpretaciones.</p></div>
+      <div class="feature reveal"><h3>Stock real por talla</h3><p>Cada referencia muestra las unidades exactas que quedan en S, M, L y XL.</p></div>
+      <div class="feature reveal"><h3>Sin reposición garantizada</h3><p>Al ser piezas retro, cuando una talla se agota puede no volver a llegar.</p></div>
+      <div class="feature reveal"><h3>Envíos área metropolitana</h3><p>Bucaramanga, Floridablanca, Girón y Piedecuesta. Coordinamos entrega por WhatsApp.</p></div>
     </div>
   </div>
 </section>
@@ -279,9 +342,9 @@
 <section id="top-mes">
   <div class="container">
     <div class="section-head">
-      <div class="eyebrow">Ranking de pedidos</div>
-      <h2>Lo más pedido <em>del mes</em></h2>
-      <p>Los tres conjuntos que más salen del taller. Stock rotando permanentemente.</p>
+      <div class="eyebrow">Últimas unidades</div>
+      <h2>Pocas <em>unidades</em></h2>
+      <p>Referencias con muy poco stock disponible — se agotan primero.</p>
     </div>
     <div class="ranking" id="rankingGrid"></div>
   </div>
@@ -289,58 +352,42 @@
 
 <section id="catalogo">
   <div class="container">
-    <div class="section-head">
-      <div class="eyebrow" id="catCount">Referencias disponibles</div>
-      <h2>Catálogo <em>2026</em></h2>
-      <p>Todos los conjuntos incluyen <strong style="color:var(--text)">camiseta + pantaloneta</strong>. Tallas S, M, L y XL.</p>
+    <div class="shop-banner" id="shopBanner"></div>
+    <button class="btn btn-outline mobile-filter-toggle" onclick="openFilterPanel()">Filtros</button>
+    <div class="shop-layout">
+      <aside class="filter-sidebar" id="filterSidebar">
+        <div class="filter-close" onclick="closeFilterPanel()">Cerrar ✕</div>
+        <div id="filterBody"></div>
+      </aside>
+      <div><div class="catalog-grid" id="catalogGrid"></div></div>
     </div>
-    <div class="filters" id="filters"></div>
-    <div class="catalog-grid" id="catalogGrid"></div>
   </div>
 </section>
 
 <section id="precios">
   <div class="container">
     <div class="section-head">
-      <div class="eyebrow">Sin intermediarios</div>
-      <h2>Precio de <em>por mayor</em></h2>
-      <p>Un solo precio para todos los equipos. El descuento se aplica solo por cantidad, y puedes mezclar equipos y tallas para llegar a él.</p>
+      <div class="eyebrow">Precio único</div>
+      <h2>Camisetas <em>retro</em></h2>
+      <p>Precio por unidad. Las ediciones especiales o de colección tienen un valor diferenciado.</p>
     </div>
     <div class="price-grid">
-      <div class="price-card">
-        <h4>Desde 1 unidad</h4>
-        <div class="amount">$39.900</div>
-        <div class="unit">por conjunto</div>
-        <ul>
-          <li>Camiseta + pantaloneta</li>
-          <li>Escudos bordados</li>
-          <li>Tallas S · M · L · XL</li>
-        </ul>
+      <div class="price-card featured reveal">
+        <div class="price-tag">Estándar</div>
+        <h4>Camiseta retro</h4>
+        <div class="amount">$75.000</div>
+        <div class="unit">por unidad</div>
+        <ul><li>Diseño de época fiel al original</li><li>Disponibilidad limitada por talla</li><li>No incluye pantaloneta</li></ul>
       </div>
-      <div class="price-card featured">
-        <div class="price-tag">Más elegido</div>
-        <h4>Desde 5 unidades</h4>
-        <div class="amount">$34.900</div>
-        <div class="unit">por conjunto</div>
-        <ul>
-          <li>Ahorras $5.000 por conjunto</li>
-          <li>Mezcla equipos y tallas</li>
-          <li>Ideal para equipos y reventa</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h4>Pedidos por volumen</h4>
-        <div class="amount">A convenir</div>
-        <div class="unit">15 unidades o más</div>
-        <ul>
-          <li>Precio especial por cantidad</li>
-          <li>Confirmamos disponibilidad de stock</li>
-          <li>Ideal para equipos y reventa</li>
-        </ul>
+      <div class="price-card reveal">
+        <h4>Edición especial</h4>
+        <div class="amount">$89.900</div>
+        <div class="unit">por unidad</div>
+        <ul><li>Finales, ediciones de aniversario, versión jugador</li><li>Piezas más buscadas de la colección</li><li>Stock más reducido</li></ul>
       </div>
     </div>
     <div style="text-align:center;margin-top:40px">
-      <a href="https://wa.me/573107820698" target="_blank" rel="noopener" class="btn btn-primary">Cotizar por WhatsApp</a>
+      <a href="https://wa.me/573107820698" target="_blank" rel="noopener" class="btn btn-primary">Consultar disponibilidad por WhatsApp</a>
     </div>
   </div>
 </section>
@@ -348,74 +395,55 @@
 <section id="calidad">
   <div class="container">
     <div class="section-head">
-      <div class="eyebrow">Terminados</div>
-      <h2>Acabados de <em>cancha</em></h2>
-      <p>La diferencia entre un uniforme que dura una temporada y uno que dura tres está en el terminado. Esto es lo que revisamos antes de que salga cada pedido.</p>
+      <div class="eyebrow">Sobre la colección</div>
+      <h2>Piezas de <em>colección</em></h2>
+      <p>Cada camiseta retro es una pieza limitada. Esto es lo que debes saber antes de pedir.</p>
     </div>
     <div class="calidad-wrap">
       <ul class="calidad-list">
-        <li><h4>Escudo bordado</h4><p>Bordado directo sobre la tela con hilo de alta densidad. No se despega ni se decolora.</p></li>
-        <li><h4>Estampado sublimado</h4><p>El patrocinio queda dentro de la fibra: se siente liso al tacto y no se agrieta.</p></li>
-        <li><h4>Tela deportiva transpirable</h4><p>Poliéster tipo dry-fit, ligero, de secado rápido y con buena caída.</p></li>
-        <li><h4>Costuras reforzadas</h4><p>Remate doble en hombros, sisas y basta. Pensado para partido, no para vitrina.</p></li>
+        <li><h4>Talla real por referencia</h4><p>El stock que ves en cada camiseta es el que hay disponible — no se fabrica más una vez agotado.</p></li>
+        <li><h4>Fidelidad al diseño original</h4><p>Escudos, patrocinios y detalles tal como se vieron esa temporada.</p></li>
+        <li><h4>Ideal para coleccionistas</h4><p>Muchas de estas referencias no vuelven a producirse.</p></li>
+        <li><h4>Verificación antes de enviar</h4><p>Revisamos costuras y estampado de cada pieza antes de despachar.</p></li>
       </ul>
-      <div class="calidad-gallery">
-        <div class="cg cg1"></div>
-        <div class="cg cg2"></div>
-        <div class="cg cg3"></div>
-        <div class="cg cg4"></div>
-      </div>
+      <div class="calidad-gallery" id="calidadGallery"></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Guía rápida</div>
-      <h2>Tallas <em>disponibles</em></h2>
-    </div>
+    <div class="section-head"><div class="eyebrow">Guía rápida</div><h2>Tallas <em>disponibles</em></h2></div>
     <div class="tallas-grid">
-      <div class="talla-card"><div class="t">S</div><p>Pecho 96 – 100 cm</p></div>
-      <div class="talla-card"><div class="t">M</div><p>Pecho 100 – 106 cm</p></div>
-      <div class="talla-card"><div class="t">L</div><p>Pecho 106 – 112 cm</p></div>
-      <div class="talla-card"><div class="t">XL</div><p>Pecho 112 – 118 cm</p></div>
+      <div class="talla-card reveal"><div class="t">S</div><p>Pecho 96 – 100 cm</p></div>
+      <div class="talla-card reveal"><div class="t">M</div><p>Pecho 100 – 106 cm</p></div>
+      <div class="talla-card reveal"><div class="t">L</div><p>Pecho 106 – 112 cm</p></div>
+      <div class="talla-card reveal"><div class="t">XL</div><p>Pecho 112 – 118 cm</p></div>
     </div>
-    <p class="tallas-note">Medidas de referencia sobre camiseta extendida. Si tienes dudas con una talla, escríbenos por WhatsApp y te ayudamos antes de despachar.</p>
+    <p class="tallas-note">La disponibilidad varía por talla y por referencia — algunas camisetas solo quedan en una o dos tallas. Revisa el stock en cada ficha antes de escribirnos.</p>
   </div>
 </section>
 
 <section id="envios">
   <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Cobertura</div>
-      <h2>Envíos a toda el <em>área metropolitana</em></h2>
-    </div>
+    <div class="section-head"><div class="eyebrow">Cobertura</div><h2>Envíos a toda el <em>área metropolitana</em></h2></div>
     <div class="envios-box">
-      <p style="max-width:420px;color:var(--muted);font-size:.9rem">Entregamos en Bucaramanga y su área metropolitana. Coordinamos día y punto de entrega directamente por WhatsApp al confirmar el pedido.</p>
-      <div class="zone-pills">
-        <span class="zone-pill">Bucaramanga</span>
-        <span class="zone-pill">Floridablanca</span>
-        <span class="zone-pill">Girón</span>
-        <span class="zone-pill">Piedecuesta</span>
-      </div>
+      <p style="max-width:420px;color:var(--muted);font-family:'Inter',sans-serif;font-size:.9rem">Entregamos en Bucaramanga y su área metropolitana. Coordinamos día y punto de entrega directamente por WhatsApp al confirmar el pedido.</p>
+      <div class="zone-pills"><span class="zone-pill">Bucaramanga</span><span class="zone-pill">Floridablanca</span><span class="zone-pill">Girón</span><span class="zone-pill">Piedecuesta</span></div>
     </div>
   </div>
 </section>
 
 <section id="faq">
   <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Antes de pedir</div>
-      <h2>Preguntas <em>frecuentes</em></h2>
-    </div>
+    <div class="section-head"><div class="eyebrow">Antes de pedir</div><h2>Preguntas <em>frecuentes</em></h2></div>
     <div id="faqList"></div>
   </div>
 </section>
 
 <div class="cta-final">
-  <h2>¿Armamos tu <em>pedido</em>?</h2>
-  <p>Escríbenos y te asesoramos con tallas, equipos y tiempos de entrega.</p>
+  <h2>¿Buscas una <em>referencia</em>?</h2>
+  <p>Escríbenos el club, año o modelo y te confirmamos si queda disponible en tu talla.</p>
   <a href="https://wa.me/573107820698" target="_blank" rel="noopener" class="btn btn-primary">Escribir por WhatsApp</a>
 </div>
 
@@ -423,18 +451,21 @@
   <div class="container">
     <div class="foot-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px">S55</div>
-        <p>Uniformes de fútbol · Calidad premium a precio de por mayor.</p>
+        <div class="logo" style="margin-bottom:14px">
+          <svg viewBox="0 0 24 20" fill="none"><path d="M2 6L7 10L12 3L17 10L22 6L20 17H4L2 6Z" stroke="#f5f4f2" stroke-width="1.6" fill="none"/></svg>
+          S55
+        </div>
+        <p>Camisetas retro de fútbol · Piezas de colección con disponibilidad limitada.</p>
       </div>
       <div>
         <h5>Catálogo</h5>
-        <a href="#top-mes">Lo más pedido</a>
-        <a href="#catalogo">Todos los equipos</a>
-        <a href="#precios">Precios</a>
+        <a href="#/catalogo">Toda la colección</a>
+        <a href="#/selecciones">Selecciones</a>
+        <a href="#/clubes">Clubes</a>
       </div>
       <div>
         <h5>Información</h5>
-        <a href="#calidad">Calidad y acabados</a>
+        <a href="#calidad">Sobre la colección</a>
         <a href="#envios">Cobertura de envíos</a>
         <a href="#faq">Preguntas frecuentes</a>
       </div>
@@ -444,97 +475,442 @@
         <p>Área Metropolitana de Bucaramanga</p>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 S55 · Todos los derechos reservados.</span>
-      <span>Temporada 2026</span>
-    </div>
+    <div class="foot-bottom"><span>© 2026 S55 · Todos los derechos reservados.</span><span>Colección Retro</span></div>
   </div>
 </footer>
 
 <div class="drawer-overlay" id="overlay" onclick="closeCart()"></div>
 <div class="drawer" id="drawer">
-  <div class="drawer-head">
-    <strong>Tu pedido</strong>
-    <span class="close-x" onclick="closeCart()">&times;</span>
-  </div>
-  <div class="drawer-body" id="drawerBody">Tu carrito está vacío. <a href="#catalogo" onclick="closeCart()" style="color:var(--accent)">Ver catálogo</a></div>
+  <div class="drawer-head"><strong>Tu pedido</strong><span class="close-x" onclick="closeCart()">&times;</span></div>
+  <div class="drawer-body" id="drawerBody">Tu carrito está vacío. <a href="#/catalogo" onclick="closeCart()" style="color:var(--red)">Ver colección</a></div>
   <div class="drawer-foot">
-    <div class="drawer-row"><span>Conjuntos</span><b id="dCount">0</b></div>
-    <div class="drawer-row"><span>Precio unitario</span><b id="dUnit">$39.900</b></div>
+    <div class="drawer-row"><span>Piezas</span><b id="dCount">0</b></div>
     <div class="drawer-row"><span>Total</span><b id="dTotal">$0</b></div>
     <a href="https://wa.me/573107820698" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;margin-top:14px">Finalizar por WhatsApp</a>
   </div>
 </div>
 
 <script>
-  // Marquee content
-  const marqueeItems = ["Bordados premium","Estampados de alta durabilidad","Precio por mayor desde 1 unidad","Tallas S · M · L · XL","Envíos a toda el Área Metropolitana de Bucaramanga"];
-  const marqueeHtml = marqueeItems.map(t=>`<span>${t}</span><span class="dot">◆</span>`).join('');
-  document.getElementById('marquee').innerHTML = marqueeHtml + marqueeHtml;
+/* =========================================================================
+   S55 — CATÁLOGO RETRO
+   Los productos, categorías, países, clubes y selecciones que ves aquí
+   vienen TODOS del set de fotos que subiste (RETROS 1.1). Cada camiseta
+   trae su stock real por talla (S/M/L/XL) tal como lo definiste.
+   ========================================================================= */
 
-  // Sample catalog data (placeholder — swap in real product photos/teams)
-  const teams = [
-    {name:"Boca Juniors", country:"Argentina", type:"Local", grad:"linear-gradient(155deg,#0a2a5e,#facc15)"},
-    {name:"River Plate", country:"Argentina", type:"Local", grad:"linear-gradient(155deg,#7a1c2b,#f4f3f1)"},
-    {name:"Santos", country:"Brasil", type:"Local", grad:"linear-gradient(155deg,#111,#3fae62)"},
-    {name:"Palmeiras", country:"Brasil", type:"Local", grad:"linear-gradient(155deg,#0a5e2a,#f4f3f1)"},
-    {name:"Fluminense", country:"Brasil", type:"Local", grad:"linear-gradient(155deg,#7a1c2b,#0a2a5e)"},
-    {name:"Peñarol", country:"Uruguay", type:"Local", grad:"linear-gradient(155deg,#111,#facc15)"},
-    {name:"Racing Club", country:"Argentina", type:"Visitante", grad:"linear-gradient(155deg,#0a2a5e,#f4f3f1)"},
-    {name:"Colo-Colo", country:"Chile", type:"Local", grad:"linear-gradient(155deg,#111,#f4f3f1)"},
-  ];
-  const catalogGrid = document.getElementById('catalogGrid');
-  function renderCatalog(filter){
-    const list = filter && filter!=="Todos" ? teams.filter(t=>t.type===filter||t.country===filter) : teams;
-    catalogGrid.innerHTML = list.map(t=>`
-      <div class="cat-card">
-        <div class="cat-img" style="background:${t.grad}"></div>
-        <div class="cat-body">
-          <h4>${t.name} · ${t.type}</h4>
-          <div class="price">$39.900</div>
-        </div>
-      </div>`).join('');
-    document.getElementById('catCount').textContent = list.length + " referencias disponibles";
-  }
-  renderCatalog();
+function slugify(s){
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+}
+function unique(arr){ return [...new Set(arr)]; }
 
-  const filterDefs = ["Todos","Local","Visitante","Alternativa","Portero","Argentina","Brasil","Chile","Uruguay","Paraguay"];
-  document.getElementById('filters').innerHTML = filterDefs.map((f,i)=>`<div class="filter-pill ${i===0?'active':''}" data-f="${f}">${f}</div>`).join('');
-  document.querySelectorAll('.filter-pill').forEach(p=>{
-    p.addEventListener('click', ()=>{
-      document.querySelectorAll('.filter-pill').forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
-      renderCatalog(p.dataset.f);
-    });
+const PRODUCTS = [{"id": 1, "name": "AC Milan Local 1988-1989", "slug": "ac-milan-local-1988-1989-0", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1988, "yearLabel": "1988-1989", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-1988-1989-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 2, "L": 3, "XL": 0}, "totalStock": 8}, {"id": 2, "name": "AC Milan Local 1993-1994", "slug": "ac-milan-local-1993-1994-1", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1993, "yearLabel": "1993-1994", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-1993-1994-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 2, "XL": 0}, "totalStock": 6}, {"id": 3, "name": "AC Milan Local 1995-1996", "slug": "ac-milan-local-1995-1996-2", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995-1996", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-1995-1996-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 3, "XL": 3}, "totalStock": 7}, {"id": 4, "name": "AC Milan Visitante Blanco 1995", "slug": "ac-milan-visitante-blanco-1995-3", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Blanco", "image": "assets/ac-milan-1995-visitante-blanco.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 2, "XL": 0}, "totalStock": 6}, {"id": 5, "name": "AC Milan Local 1996-1997", "slug": "ac-milan-local-1996-1997-4", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-1996-1997-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 0, "XL": 0}, "totalStock": 1}, {"id": 6, "name": "AC Milan Visitante  Alternativa 1999-2000", "slug": "ac-milan-visitante-alternativa-1999-2000-5", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1999, "yearLabel": "1999-2000", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante  Alternativa", "image": "assets/ac-milan-1999-2000-visitante-alternativa.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 3, "XL": 0}, "totalStock": 9}, {"id": 7, "name": "AC Milan Tercera 2000-2001", "slug": "ac-milan-tercera-2000-2001-6", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2000, "yearLabel": "2000-2001", "decade": 2000, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/ac-milan-2000-2001-tercera.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 0, "XL": 0}, "totalStock": 4}, {"id": 8, "name": "AC Milan Visitante 2006-2007", "slug": "ac-milan-visitante-2006-2007-7", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2006, "yearLabel": "2006-2007", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/ac-milan-2006-2007-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 3, "XL": 3}, "totalStock": 10}, {"id": 9, "name": "AC Milan Local 2006", "slug": "ac-milan-local-2006-8", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2006, "yearLabel": "2006", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-2006-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 1, "XL": 3}, "totalStock": 6}, {"id": 10, "name": "AC Milan Local 2016-2017", "slug": "ac-milan-local-2016-2017-9", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2016, "yearLabel": "2016-2017", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/ac-milan-2016-2017-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 1, "XL": 2}, "totalStock": 6}, {"id": 11, "name": "AC Milan Special Off-White 2023", "slug": "ac-milan-special-off-white-2023-10", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2023, "yearLabel": "2023", "decade": 2020, "type": "especial", "typeLabel": "Especial", "typeRaw": "Special Off-White", "image": "assets/ac-milan-2023-special-off-white.jpeg", "price": 89900, "stock": {"S": 2, "M": 1, "L": 2, "XL": 1}, "totalStock": 6}, {"id": 12, "name": "AC Milan Cuarta  Edición Especial 2025-2026", "slug": "ac-milan-cuarta-edicion-especial-2025-2026-11", "entity": "AC Milan", "entitySlug": "ac-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2025, "yearLabel": "2025-2026", "decade": 2020, "type": "cuarta", "typeLabel": "Cuarta", "typeRaw": "Cuarta  Edición Especial", "image": "assets/ac-milan-2025-2026-cuarta-edicion-especial.jpeg", "price": 89900, "stock": {"S": 1, "M": 1, "L": 0, "XL": 3}, "totalStock": 5}, {"id": 13, "name": "Alemania Local 1990", "slug": "alemania-local-1990-12", "entity": "Alemania", "entitySlug": "alemania", "entityType": "selection", "country": "Alemania", "countrySlug": "alemania", "year": 1990, "yearLabel": "1990", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/alemania-1990-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 3, "XL": 2}, "totalStock": 8}, {"id": 14, "name": "Alemania Visitante 1994", "slug": "alemania-visitante-1994-13", "entity": "Alemania", "entitySlug": "alemania", "entityType": "selection", "country": "Alemania", "countrySlug": "alemania", "year": 1994, "yearLabel": "1994", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/alemania-1994-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 3, "XL": 3}, "totalStock": 6}, {"id": 15, "name": "Argentina Local 1986", "slug": "argentina-local-1986-14", "entity": "Argentina", "entitySlug": "argentina", "entityType": "selection", "country": "Argentina", "countrySlug": "argentina", "year": 1986, "yearLabel": "1986", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/argentina-1986-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 2, "XL": 0}, "totalStock": 5}, {"id": 16, "name": "Argentina Especial 1997", "slug": "argentina-especial-1997-15", "entity": "Argentina", "entitySlug": "argentina", "entityType": "selection", "country": "Argentina", "countrySlug": "argentina", "year": 1997, "yearLabel": "1997", "decade": 1990, "type": "especial", "typeLabel": "Especial", "typeRaw": "Especial", "image": "assets/argentina-1997-especial.jpeg", "price": 89900, "stock": {"S": 0, "M": 1, "L": 0, "XL": 1}, "totalStock": 2}, {"id": 17, "name": "Arsenal Local 1988-1990", "slug": "arsenal-local-1988-1990-16", "entity": "Arsenal", "entitySlug": "arsenal", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1988, "yearLabel": "1988-1990", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/arsenal-1988-1990-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 3, "L": 0, "XL": 1}, "totalStock": 4}, {"id": 18, "name": "Arsenal Visitante 1988-1991", "slug": "arsenal-visitante-1988-1991-17", "entity": "Arsenal", "entitySlug": "arsenal", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1988, "yearLabel": "1988-1991", "decade": 1980, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/arsenal-1988-1991-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 3, "XL": 2}, "totalStock": 8}, {"id": 19, "name": "Arsenal Visitante 1997-1999", "slug": "arsenal-visitante-1997-1999-18", "entity": "Arsenal", "entitySlug": "arsenal", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1997, "yearLabel": "1997-1999", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/arsenal-1997-1999-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 0, "XL": 0}, "totalStock": 3}, {"id": 20, "name": "Atlético de Madrid Pre-Partido  Entrenamiento 2024", "slug": "atletico-de-madrid-pre-partido-entrenamiento-2024-19", "entity": "Atlético de Madrid", "entitySlug": "atletico-de-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2024, "yearLabel": "2024", "decade": 2020, "type": "especial", "typeLabel": "Especial", "typeRaw": "Pre-Partido  Entrenamiento", "image": "assets/atletico-de-madrid-2024-pre-partido-entrenamiento.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 2, "XL": 3}, "totalStock": 9}, {"id": 21, "name": "Bayern Munich Local 1995", "slug": "bayern-munich-local-1995-20", "entity": "Bayern Munich", "entitySlug": "bayern-munich", "entityType": "club", "country": "Alemania", "countrySlug": "alemania", "year": 1995, "yearLabel": "1995", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/bayern-munich-1995-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 0, "XL": 0}, "totalStock": 3}, {"id": 22, "name": "Bayern Munich Local 1995-1997", "slug": "bayern-munich-local-1995-1997-21", "entity": "Bayern Munich", "entitySlug": "bayern-munich", "entityType": "club", "country": "Alemania", "countrySlug": "alemania", "year": 1995, "yearLabel": "1995-1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/bayern-munich-1995-1997-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 1, "XL": 0}, "totalStock": 4}, {"id": 23, "name": "Bayern Munich Visitante Version Manga Larga 1996-1997", "slug": "bayern-munich-visitante-version-manga-larga-1996-1997-22", "entity": "Bayern Munich", "entitySlug": "bayern-munich", "entityType": "club", "country": "Alemania", "countrySlug": "alemania", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Version Manga Larga", "image": "assets/bayern-munich-1996-1997-visitante-version-manga-larga.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 1, "XL": 3}, "totalStock": 7}, {"id": 24, "name": "Bayern Munich Visitante 1996-1997", "slug": "bayern-munich-visitante-1996-1997-23", "entity": "Bayern Munich", "entitySlug": "bayern-munich", "entityType": "club", "country": "Alemania", "countrySlug": "alemania", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/bayern-munich-1996-1997-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 3, "XL": 0}, "totalStock": 3}, {"id": 25, "name": "Borussia Dortmund Local 1988-1989", "slug": "borussia-dortmund-local-1988-1989-24", "entity": "Borussia Dortmund", "entitySlug": "borussia-dortmund", "entityType": "club", "country": "Alemania", "countrySlug": "alemania", "year": 1988, "yearLabel": "1988-1989", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/borussia-dortmund-1988-1989-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 2, "XL": 3}, "totalStock": 10}, {"id": 26, "name": "Celtic Local 1997-1999", "slug": "celtic-local-1997-1999-25", "entity": "Celtic", "entitySlug": "celtic", "entityType": "club", "country": "Escocia", "countrySlug": "escocia", "year": 1997, "yearLabel": "1997-1999", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/celtic-1997-1999-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 2, "XL": 1}, "totalStock": 7}, {"id": 27, "name": "Chelsea Visitante 1998-2000", "slug": "chelsea-visitante-1998-2000-26", "entity": "Chelsea", "entitySlug": "chelsea", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1998, "yearLabel": "1998-2000", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/chelsea-1998-2000-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 1, "XL": 3}, "totalStock": 6}, {"id": 28, "name": "Chelsea Local Especial Final Champions League 2011-2012", "slug": "chelsea-local-especial-final-champions-league-2011-2012-27", "entity": "Chelsea", "entitySlug": "chelsea", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2011, "yearLabel": "2011-2012", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local Especial Final Champions League", "image": "assets/chelsea-2011-2012-local-especial-final-champions-league.jpeg", "price": 89900, "stock": {"S": 1, "M": 3, "L": 1, "XL": 3}, "totalStock": 8}, {"id": 29, "name": "Chelsea Tercera 2020", "slug": "chelsea-tercera-2020-28", "entity": "Chelsea", "entitySlug": "chelsea", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2020, "yearLabel": "2020", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/chelsea-2020-tercera.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 0, "XL": 1}, "totalStock": 4}, {"id": 30, "name": "Club América Visitante 1994", "slug": "club-america-visitante-1994-29", "entity": "Club América", "entitySlug": "club-america", "entityType": "club", "country": "México", "countrySlug": "mexico", "year": 1994, "yearLabel": "1994", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/club-america-1994-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 2, "XL": 1}, "totalStock": 9}, {"id": 31, "name": "Corinthians Visitante 1999", "slug": "corinthians-visitante-1999-30", "entity": "Corinthians", "entitySlug": "corinthians", "entityType": "club", "country": "Brasil", "countrySlug": "brasil", "year": 1999, "yearLabel": "1999", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/corinthians-1999-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 0, "XL": 3}, "totalStock": 5}, {"id": 32, "name": "FC Barcelona Local 1992-1995", "slug": "fc-barcelona-local-1992-1995-31", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1992, "yearLabel": "1992-1995", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/fc-barcelona-1992-1995-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 0, "XL": 1}, "totalStock": 5}, {"id": 33, "name": "FC Barcelona Local 1995-1997", "slug": "fc-barcelona-local-1995-1997-32", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1995, "yearLabel": "1995-1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/fc-barcelona-1995-1997-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 1, "XL": 2}, "totalStock": 3}, {"id": 34, "name": "FC Barcelona Visitante 1996-1997", "slug": "fc-barcelona-visitante-1996-1997-33", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-1996-1997-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 1, "XL": 1}, "totalStock": 2}, {"id": 35, "name": "FC Barcelona Visitante 2003-2004", "slug": "fc-barcelona-visitante-2003-2004-34", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2003, "yearLabel": "2003-2004", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-2003-2004-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 0, "XL": 2}, "totalStock": 6}, {"id": 36, "name": "FC Barcelona Visitante 2007-2008", "slug": "fc-barcelona-visitante-2007-2008-35", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2007, "yearLabel": "2007-2008", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-2007-2008-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 0, "XL": 0}, "totalStock": 3}, {"id": 37, "name": "FC Barcelona Visitante 2011-2012", "slug": "fc-barcelona-visitante-2011-2012-36", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2011, "yearLabel": "2011-2012", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-2011-2012-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 2, "XL": 2}, "totalStock": 7}, {"id": 38, "name": "FC Barcelona Visitante Senyera 2013-2014", "slug": "fc-barcelona-visitante-senyera-2013-2014-37", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2013, "yearLabel": "2013-2014", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Senyera", "image": "assets/fc-barcelona-2013-2014-visitante-senyera.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 3, "XL": 3}, "totalStock": 8}, {"id": 39, "name": "FC Barcelona Visitante 2013-2014", "slug": "fc-barcelona-visitante-2013-2014-38", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2013, "yearLabel": "2013-2014", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-2013-2014-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 1, "XL": 3}, "totalStock": 5}, {"id": 40, "name": "FC Barcelona Tercera 2014-2015", "slug": "fc-barcelona-tercera-2014-2015-39", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2014, "yearLabel": "2014-2015", "decade": 2010, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/fc-barcelona-2014-2015-tercera.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 3, "XL": 0}, "totalStock": 6}, {"id": 41, "name": "FC Barcelona Local 2015-2016", "slug": "fc-barcelona-local-2015-2016-40", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2015, "yearLabel": "2015-2016", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/fc-barcelona-2015-2016-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 1, "XL": 3}, "totalStock": 6}, {"id": 42, "name": "FC Barcelona Visitante 2016-2017", "slug": "fc-barcelona-visitante-2016-2017-41", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2016, "yearLabel": "2016-2017", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fc-barcelona-2016-2017-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 1, "XL": 0}, "totalStock": 2}, {"id": 43, "name": "FC Barcelona Local 2019-2020", "slug": "fc-barcelona-local-2019-2020-42", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2019, "yearLabel": "2019-2020", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/fc-barcelona-2019-2020-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 3, "XL": 2}, "totalStock": 8}, {"id": 44, "name": "FC Barcelona Arquero 2024-2025", "slug": "fc-barcelona-arquero-2024-2025-43", "entity": "FC Barcelona", "entitySlug": "fc-barcelona", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "portero", "typeLabel": "Portero", "typeRaw": "Arquero", "image": "assets/fc-barcelona-2024-2025-arquero.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 3, "XL": 2}, "totalStock": 9}, {"id": 45, "name": "Fiorentina Local ML 1992", "slug": "fiorentina-local-ml-1992-44", "entity": "Fiorentina", "entitySlug": "fiorentina", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1992, "yearLabel": "1992", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local ML", "image": "assets/fiorentina-1992-local-ml.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 3, "XL": 3}, "totalStock": 8}, {"id": 46, "name": "Fiorentina Local 1992", "slug": "fiorentina-local-1992-45", "entity": "Fiorentina", "entitySlug": "fiorentina", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1992, "yearLabel": "1992", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/fiorentina-1992-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 3, "XL": 3}, "totalStock": 10}, {"id": 47, "name": "Fiorentina Visitante ML 1998", "slug": "fiorentina-visitante-ml-1998-46", "entity": "Fiorentina", "entitySlug": "fiorentina", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante ML", "image": "assets/fiorentina-1998-visitante-ml.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 3, "XL": 1}, "totalStock": 7}, {"id": 48, "name": "Fiorentina Visitante 1998", "slug": "fiorentina-visitante-1998-47", "entity": "Fiorentina", "entitySlug": "fiorentina", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/fiorentina-1998-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 2, "XL": 1}, "totalStock": 5}, {"id": 49, "name": "Flamengo Visitante 1998", "slug": "flamengo-visitante-1998-48", "entity": "Flamengo", "entitySlug": "flamengo", "entityType": "club", "country": "Brasil", "countrySlug": "brasil", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/flamengo-1998-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 0, "XL": 0}, "totalStock": 1}, {"id": 50, "name": "Francia Visitante 1998", "slug": "francia-visitante-1998-49", "entity": "Francia", "entitySlug": "francia", "entityType": "selection", "country": "Francia", "countrySlug": "francia", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/francia-1998-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 0, "XL": 2}, "totalStock": 6}, {"id": 51, "name": "Gales Visitante 1996", "slug": "gales-visitante-1996-50", "entity": "Gales", "entitySlug": "gales", "entityType": "selection", "country": "Gales", "countrySlug": "gales", "year": 1996, "yearLabel": "1996", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/gales-1996-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 3, "XL": 2}, "totalStock": 6}, {"id": 52, "name": "Holanda LocalVisitante Especial 1988", "slug": "holanda-localvisitante-especial-1988-51", "entity": "Holanda", "entitySlug": "holanda", "entityType": "selection", "country": "Países Bajos", "countrySlug": "paises-bajos", "year": 1988, "yearLabel": "1988", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "LocalVisitante Especial", "image": "assets/holanda-1988-localvisitante-especial.jpeg", "price": 89900, "stock": {"S": 2, "M": 0, "L": 0, "XL": 2}, "totalStock": 4}, {"id": 53, "name": "Holanda Local 1998", "slug": "holanda-local-1998-52", "entity": "Holanda", "entitySlug": "holanda", "entityType": "selection", "country": "Países Bajos", "countrySlug": "paises-bajos", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/holanda-1998-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 0, "XL": 1}, "totalStock": 1}, {"id": 54, "name": "Holanda Local 2014", "slug": "holanda-local-2014-53", "entity": "Holanda", "entitySlug": "holanda", "entityType": "selection", "country": "Países Bajos", "countrySlug": "paises-bajos", "year": 2014, "yearLabel": "2014", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/holanda-2014-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 0, "XL": 1}, "totalStock": 4}, {"id": 55, "name": "Inter de Milan Local 1995-1996", "slug": "inter-de-milan-local-1995-1996-54", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995-1996", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/inter-de-milan-1995-1996-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 3, "XL": 0}, "totalStock": 6}, {"id": 56, "name": "Inter de Milan Visitante 1995-1996", "slug": "inter-de-milan-visitante-1995-1996-55", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995-1996", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/inter-de-milan-1995-1996-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 1, "XL": 1}, "totalStock": 2}, {"id": 57, "name": "Inter de Milan Tercera Manga Larga 1997-1998", "slug": "inter-de-milan-tercera-manga-larga-1997-1998-56", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1997, "yearLabel": "1997-1998", "decade": 1990, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera Manga Larga", "image": "assets/inter-de-milan-1997-1998-tercera-manga-larga.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 2, "XL": 2}, "totalStock": 7}, {"id": 58, "name": "Inter de Milan Local Con Scudetto 2024-2025", "slug": "inter-de-milan-local-con-scudetto-2024-2025-57", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local Con Scudetto", "image": "assets/inter-de-milan-2024-2025-local-con-scudetto.jpeg", "price": 89900, "stock": {"S": 2, "M": 3, "L": 2, "XL": 1}, "totalStock": 8}, {"id": 59, "name": "Inter de Milan Local Version Jugador Con Scudetto 2024-2025", "slug": "inter-de-milan-local-version-jugador-con-scudetto-2024-2025-58", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local Version Jugador Con Scudetto", "image": "assets/inter-de-milan-2024-2025-local-version-jugador-con-scudetto.jpeg", "price": 89900, "stock": {"S": 0, "M": 0, "L": 3, "XL": 3}, "totalStock": 6}, {"id": 60, "name": "Inter de Milan Tercera Con Scudetto 2024-2025", "slug": "inter-de-milan-tercera-con-scudetto-2024-2025-59", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera Con Scudetto", "image": "assets/inter-de-milan-2024-2025-tercera-con-scudetto.jpeg", "price": 89900, "stock": {"S": 3, "M": 1, "L": 1, "XL": 3}, "totalStock": 8}, {"id": 61, "name": "Inter de Milan Visitante Con Scudetto 2024-2025", "slug": "inter-de-milan-visitante-con-scudetto-2024-2025-60", "entity": "Inter de Milan", "entitySlug": "inter-de-milan", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Con Scudetto", "image": "assets/inter-de-milan-2024-2025-visitante-con-scudetto.jpeg", "price": 89900, "stock": {"S": 0, "M": 2, "L": 1, "XL": 0}, "totalStock": 3}, {"id": 62, "name": "Italia Local 1994", "slug": "italia-local-1994-61", "entity": "Italia", "entitySlug": "italia", "entityType": "selection", "country": "Italia", "countrySlug": "italia", "year": 1994, "yearLabel": "1994", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/italia-1994-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 3, "XL": 0}, "totalStock": 5}, {"id": 63, "name": "Juventus Local Danone 1992", "slug": "juventus-local-danone-1992-62", "entity": "Juventus", "entitySlug": "juventus", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1992, "yearLabel": "1992", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local Danone", "image": "assets/juventus-1992-local-danone.jpeg", "price": 89900, "stock": {"S": 3, "M": 0, "L": 3, "XL": 3}, "totalStock": 9}, {"id": 64, "name": "Juventus Tercera 1997-1998", "slug": "juventus-tercera-1997-1998-63", "entity": "Juventus", "entitySlug": "juventus", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1997, "yearLabel": "1997-1998", "decade": 1990, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/juventus-1997-1998-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 3, "XL": 3}, "totalStock": 9}, {"id": 65, "name": "Juventus Local MiniDisc 1997", "slug": "juventus-local-minidisc-1997-64", "entity": "Juventus", "entitySlug": "juventus", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1997, "yearLabel": "1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local MiniDisc", "image": "assets/juventus-1997-local-minidisc.jpeg", "price": 89900, "stock": {"S": 1, "M": 3, "L": 1, "XL": 1}, "totalStock": 6}, {"id": 66, "name": "Juventus Local 2002-2003", "slug": "juventus-local-2002-2003-65", "entity": "Juventus", "entitySlug": "juventus", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 2002, "yearLabel": "2002-2003", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/juventus-2002-2003-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 0, "XL": 1}, "totalStock": 5}, {"id": 67, "name": "Liverpool Visitante 1989-1991", "slug": "liverpool-visitante-1989-1991-66", "entity": "Liverpool", "entitySlug": "liverpool", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1989, "yearLabel": "1989-1991", "decade": 1980, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/liverpool-1989-1991-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 1, "XL": 0}, "totalStock": 1}, {"id": 68, "name": "Liverpool Visitante 1996-1997", "slug": "liverpool-visitante-1996-1997-67", "entity": "Liverpool", "entitySlug": "liverpool", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/liverpool-1996-1997-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 0, "XL": 1}, "totalStock": 4}, {"id": 69, "name": "Liverpool Local 1996-1998", "slug": "liverpool-local-1996-1998-68", "entity": "Liverpool", "entitySlug": "liverpool", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1996, "yearLabel": "1996-1998", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/liverpool-1996-1998-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 3, "XL": 1}, "totalStock": 7}, {"id": 70, "name": "Liverpool Visitante Especial Final FA Cup 2000-2001", "slug": "liverpool-visitante-especial-final-fa-cup-2000-2001-69", "entity": "Liverpool", "entitySlug": "liverpool", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2000, "yearLabel": "2000-2001", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Especial Final FA Cup", "image": "assets/liverpool-2000-2001-visitante-especial-final-fa-cup.jpeg", "price": 89900, "stock": {"S": 3, "M": 2, "L": 1, "XL": 2}, "totalStock": 8}, {"id": 71, "name": "México Local 1986", "slug": "mexico-local-1986-70", "entity": "México", "entitySlug": "mexico", "entityType": "selection", "country": "México", "countrySlug": "mexico", "year": 1986, "yearLabel": "1986", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/mexico-1986-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 0, "XL": 3}, "totalStock": 9}, {"id": 72, "name": "Manchester City Visitante 1997-1998", "slug": "manchester-city-visitante-1997-1998-71", "entity": "Manchester City", "entitySlug": "manchester-city", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1997, "yearLabel": "1997-1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-city-1997-1998-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 0, "L": 3, "XL": 3}, "totalStock": 8}, {"id": 73, "name": "Manchester City Local 2024-2025", "slug": "manchester-city-local-2024-2025-72", "entity": "Manchester City", "entitySlug": "manchester-city", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/manchester-city-2024-2025-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 2, "XL": 3}, "totalStock": 7}, {"id": 74, "name": "Manchester City Tercera 2024-2025", "slug": "manchester-city-tercera-2024-2025-73", "entity": "Manchester City", "entitySlug": "manchester-city", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/manchester-city-2024-2025-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 1, "XL": 1}, "totalStock": 7}, {"id": 75, "name": "Manchester City Visitante 2024-2025", "slug": "manchester-city-visitante-2024-2025-74", "entity": "Manchester City", "entitySlug": "manchester-city", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-city-2024-2025-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 0, "XL": 1}, "totalStock": 2}, {"id": 76, "name": "Manchester United Visitante 1982-1983", "slug": "manchester-united-visitante-1982-1983-75", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1982, "yearLabel": "1982-1983", "decade": 1980, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1982-1983-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 0, "XL": 0}, "totalStock": 4}, {"id": 77, "name": "Manchester United Visitante 1986-1988", "slug": "manchester-united-visitante-1986-1988-76", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1986, "yearLabel": "1986-1988", "decade": 1980, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1986-1988-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 2, "L": 0, "XL": 1}, "totalStock": 6}, {"id": 78, "name": "Manchester United Visitante 1988-1990", "slug": "manchester-united-visitante-1988-1990-77", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1988, "yearLabel": "1988-1990", "decade": 1980, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1988-1990-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 3, "XL": 3}, "totalStock": 7}, {"id": 79, "name": "Manchester United Visitante 1990-1992", "slug": "manchester-united-visitante-1990-1992-78", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1990, "yearLabel": "1990-1992", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1990-1992-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 3, "L": 1, "XL": 1}, "totalStock": 5}, {"id": 80, "name": "Manchester United Especial Recopa de Europa 1991", "slug": "manchester-united-especial-recopa-de-europa-1991-79", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1991, "yearLabel": "1991", "decade": 1990, "type": "especial", "typeLabel": "Especial", "typeRaw": "Especial Recopa de Europa", "image": "assets/manchester-united-1991-especial-recopa-de-europa.jpeg", "price": 89900, "stock": {"S": 0, "M": 2, "L": 1, "XL": 2}, "totalStock": 5}, {"id": 81, "name": "Manchester United Tercera Newton Heath 1992-1994", "slug": "manchester-united-tercera-newton-heath-1992-1994-80", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1992, "yearLabel": "1992-1994", "decade": 1990, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera Newton Heath", "image": "assets/manchester-united-1992-1994-tercera-newton-heath.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 2, "XL": 1}, "totalStock": 4}, {"id": 82, "name": "Manchester United Visitante 1993-1995", "slug": "manchester-united-visitante-1993-1995-81", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1993, "yearLabel": "1993-1995", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1993-1995-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 0, "XL": 3}, "totalStock": 9}, {"id": 83, "name": "Manchester United Visitante 1995-1996", "slug": "manchester-united-visitante-1995-1996-82", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1995, "yearLabel": "1995-1996", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/manchester-united-1995-1996-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 3, "XL": 1}, "totalStock": 8}, {"id": 84, "name": "Manchester United Tercera 1997-1999", "slug": "manchester-united-tercera-1997-1999-83", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1997, "yearLabel": "1997-1999", "decade": 1990, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/manchester-united-1997-1999-tercera.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 2, "XL": 2}, "totalStock": 6}, {"id": 85, "name": "Manchester United Tercera 1999-2000", "slug": "manchester-united-tercera-1999-2000-84", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1999, "yearLabel": "1999-2000", "decade": 1990, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/manchester-united-1999-2000-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 0, "XL": 3}, "totalStock": 8}, {"id": 86, "name": "Manchester United Tercera 2021-2022", "slug": "manchester-united-tercera-2021-2022-85", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2021, "yearLabel": "2021-2022", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/manchester-united-2021-2022-tercera.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 3, "XL": 2}, "totalStock": 6}, {"id": 87, "name": "Manchester United Tercera 2024-2025", "slug": "manchester-united-tercera-2024-2025-86", "entity": "Manchester United", "entitySlug": "manchester-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/manchester-united-2024-2025-tercera.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 3, "XL": 2}, "totalStock": 9}, {"id": 88, "name": "Napoli Local 1987", "slug": "napoli-local-1987-87", "entity": "Napoli", "entitySlug": "napoli", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1987, "yearLabel": "1987", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/napoli-1987-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 3, "XL": 3}, "totalStock": 9}, {"id": 89, "name": "Newcastle United Visitante 2024-2025", "slug": "newcastle-united-visitante-2024-2025-88", "entity": "Newcastle United", "entitySlug": "newcastle-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/newcastle-united-2024-2025-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 2, "XL": 2}, "totalStock": 7}, {"id": 90, "name": "Olympique de Marseille Local 1998", "slug": "olympique-de-marseille-local-1998-89", "entity": "Olympique de Marseille", "entitySlug": "olympique-de-marseille", "entityType": "club", "country": "Francia", "countrySlug": "francia", "year": 1998, "yearLabel": "1998", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/olympique-de-marseille-1998-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 2, "XL": 0}, "totalStock": 6}, {"id": 91, "name": "PSV Eindhoven Visitante 1990", "slug": "psv-eindhoven-visitante-1990-90", "entity": "PSV Eindhoven", "entitySlug": "psv-eindhoven", "entityType": "club", "country": "Países Bajos", "countrySlug": "paises-bajos", "year": 1990, "yearLabel": "1990", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/psv-eindhoven-1990-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 1, "XL": 3}, "totalStock": 6}, {"id": 92, "name": "Paris Saint-Germain Local 1997-1998", "slug": "paris-saint-germain-local-1997-1998-91", "entity": "Paris Saint-Germain", "entitySlug": "paris-saint-germain", "entityType": "club", "country": "Francia", "countrySlug": "francia", "year": 1997, "yearLabel": "1997-1998", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/paris-saint-germain-1997-1998-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 2, "XL": 0}, "totalStock": 5}, {"id": 93, "name": "Paris Saint-Germain Local 1998-1999", "slug": "paris-saint-germain-local-1998-1999-92", "entity": "Paris Saint-Germain", "entitySlug": "paris-saint-germain", "entityType": "club", "country": "Francia", "countrySlug": "francia", "year": 1998, "yearLabel": "1998-1999", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/paris-saint-germain-1998-1999-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 0, "XL": 2}, "totalStock": 7}, {"id": 94, "name": "Paris Saint-Germain Visitante 1999-2000", "slug": "paris-saint-germain-visitante-1999-2000-93", "entity": "Paris Saint-Germain", "entitySlug": "paris-saint-germain", "entityType": "club", "country": "Francia", "countrySlug": "francia", "year": 1999, "yearLabel": "1999-2000", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/paris-saint-germain-1999-2000-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 1, "XL": 0}, "totalStock": 7}, {"id": 95, "name": "Parma Visitante 1995-1997", "slug": "parma-visitante-1995-1997-94", "entity": "Parma", "entitySlug": "parma", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/parma-1995-1997-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 2, "L": 2, "XL": 1}, "totalStock": 8}, {"id": 96, "name": "Parma Visitante Azul 1995", "slug": "parma-visitante-azul-1995-95", "entity": "Parma", "entitySlug": "parma", "entityType": "club", "country": "Italia", "countrySlug": "italia", "year": 1995, "yearLabel": "1995", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante Azul", "image": "assets/parma-1995-visitante-azul.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 1, "XL": 1}, "totalStock": 5}, {"id": 97, "name": "Portugal Local 1992", "slug": "portugal-local-1992-96", "entity": "Portugal", "entitySlug": "portugal", "entityType": "selection", "country": "Portugal", "countrySlug": "portugal", "year": 1992, "yearLabel": "1992", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/portugal-1992-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 0, "XL": 1}, "totalStock": 3}, {"id": 98, "name": "Portugal Visitante 1992", "slug": "portugal-visitante-1992-97", "entity": "Portugal", "entitySlug": "portugal", "entityType": "selection", "country": "Portugal", "countrySlug": "portugal", "year": 1992, "yearLabel": "1992", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/portugal-1992-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 0, "L": 0, "XL": 2}, "totalStock": 2}, {"id": 99, "name": "Real Madrid Local 1989-1990", "slug": "real-madrid-local-1989-1990-98", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1989, "yearLabel": "1989-1990", "decade": 1980, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-1989-1990-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 3, "XL": 2}, "totalStock": 8}, {"id": 100, "name": "Real Madrid Local 1994-1996", "slug": "real-madrid-local-1994-1996-99", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1994, "yearLabel": "1994-1996", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-1994-1996-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 3, "XL": 2}, "totalStock": 6}, {"id": 101, "name": "Real Madrid Local 1996-1997", "slug": "real-madrid-local-1996-1997-100", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-1996-1997-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 0, "L": 2, "XL": 0}, "totalStock": 3}, {"id": 102, "name": "Real Madrid Local 1996-1997", "slug": "real-madrid-local-1996-1997-101", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-1996-1997-local-2.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 0, "XL": 0}, "totalStock": 4}, {"id": 103, "name": "Real Madrid Portero 1996-1997", "slug": "real-madrid-portero-1996-1997-102", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "portero", "typeLabel": "Portero", "typeRaw": "Portero", "image": "assets/real-madrid-1996-1997-portero.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 2, "XL": 0}, "totalStock": 5}, {"id": 104, "name": "Real Madrid Visitante 1996-1997", "slug": "real-madrid-visitante-1996-1997-103", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1996, "yearLabel": "1996-1997", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/real-madrid-1996-1997-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 3, "L": 2, "XL": 0}, "totalStock": 6}, {"id": 105, "name": "Real Madrid Visitante 1997-1998", "slug": "real-madrid-visitante-1997-1998-104", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 1997, "yearLabel": "1997-1998", "decade": 1990, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/real-madrid-1997-1998-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 0, "XL": 2}, "totalStock": 6}, {"id": 106, "name": "Real Madrid Local Centenario 2001-2002", "slug": "real-madrid-local-centenario-2001-2002-105", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2001, "yearLabel": "2001-2002", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local Centenario", "image": "assets/real-madrid-2001-2002-local-centenario.jpeg", "price": 89900, "stock": {"S": 2, "M": 1, "L": 0, "XL": 3}, "totalStock": 6}, {"id": 107, "name": "Real Madrid Tercera 2001-2002", "slug": "real-madrid-tercera-2001-2002-106", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2001, "yearLabel": "2001-2002", "decade": 2000, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/real-madrid-2001-2002-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 3, "XL": 1}, "totalStock": 9}, {"id": 108, "name": "Real Madrid Local 2002-2003", "slug": "real-madrid-local-2002-2003-107", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2002, "yearLabel": "2002-2003", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-2002-2003-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 0, "XL": 3}, "totalStock": 6}, {"id": 109, "name": "Real Madrid Local 2004-2005", "slug": "real-madrid-local-2004-2005-108", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2004, "yearLabel": "2004-2005", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-2004-2005-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 2, "XL": 2}, "totalStock": 8}, {"id": 110, "name": "Real Madrid Local 2006-2007", "slug": "real-madrid-local-2006-2007-109", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2006, "yearLabel": "2006-2007", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-2006-2007-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 0, "XL": 2}, "totalStock": 7}, {"id": 111, "name": "Real Madrid Segunda Visitante 2006-2007", "slug": "real-madrid-segunda-visitante-2006-2007-110", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2006, "yearLabel": "2006-2007", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Segunda Visitante", "image": "assets/real-madrid-2006-2007-segunda-visitante.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 2, "XL": 1}, "totalStock": 5}, {"id": 112, "name": "Real Madrid Visitante 2006-2007", "slug": "real-madrid-visitante-2006-2007-111", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2006, "yearLabel": "2006-2007", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/real-madrid-2006-2007-visitante.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 3, "XL": 2}, "totalStock": 6}, {"id": 113, "name": "Real Madrid Tercera 2011-2012", "slug": "real-madrid-tercera-2011-2012-112", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2011, "yearLabel": "2011-2012", "decade": 2010, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/real-madrid-2011-2012-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 0, "L": 3, "XL": 3}, "totalStock": 8}, {"id": 114, "name": "Real Madrid Visitante 2011-2012", "slug": "real-madrid-visitante-2011-2012-113", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2011, "yearLabel": "2011-2012", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/real-madrid-2011-2012-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 0, "XL": 3}, "totalStock": 8}, {"id": 115, "name": "Real Madrid Tercera 2012-2013", "slug": "real-madrid-tercera-2012-2013-114", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2012, "yearLabel": "2012-2013", "decade": 2010, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/real-madrid-2012-2013-tercera.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 2, "XL": 0}, "totalStock": 5}, {"id": 116, "name": "Real Madrid Local Manga Larga 2016-2017", "slug": "real-madrid-local-manga-larga-2016-2017-115", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2016, "yearLabel": "2016-2017", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local Manga Larga", "image": "assets/real-madrid-2016-2017-local-manga-larga.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 3, "XL": 2}, "totalStock": 10}, {"id": 117, "name": "Real Madrid Local 2016-2017", "slug": "real-madrid-local-2016-2017-116", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2016, "yearLabel": "2016-2017", "decade": 2010, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-2016-2017-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 3, "L": 3, "XL": 2}, "totalStock": 11}, {"id": 118, "name": "Real Madrid Visitante 2017-2018", "slug": "real-madrid-visitante-2017-2018-117", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2017, "yearLabel": "2017-2018", "decade": 2010, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/real-madrid-2017-2018-visitante.jpeg", "price": 74900, "stock": {"S": 2, "M": 3, "L": 2, "XL": 2}, "totalStock": 9}, {"id": 119, "name": "Real Madrid Local Player Issue 2024-2025", "slug": "real-madrid-local-player-issue-2024-2025-118", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local Player Issue", "image": "assets/real-madrid-2024-2025-local-player-issue.jpeg", "price": 89900, "stock": {"S": 1, "M": 0, "L": 0, "XL": 2}, "totalStock": 3}, {"id": 120, "name": "Real Madrid Local 2024-2025", "slug": "real-madrid-local-2024-2025-119", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/real-madrid-2024-2025-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 2, "L": 1, "XL": 2}, "totalStock": 7}, {"id": 121, "name": "Real Madrid Tercera 2024-2025", "slug": "real-madrid-tercera-2024-2025-120", "entity": "Real Madrid", "entitySlug": "real-madrid", "entityType": "club", "country": "España", "countrySlug": "espana", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "tercera", "typeLabel": "Tercera", "typeRaw": "Tercera", "image": "assets/real-madrid-2024-2025-tercera.jpeg", "price": 74900, "stock": {"S": 1, "M": 1, "L": 0, "XL": 3}, "totalStock": 5}, {"id": 122, "name": "São Paulo Local 2000", "slug": "sao-paulo-local-2000-121", "entity": "São Paulo", "entitySlug": "sao-paulo", "entityType": "club", "country": "Brasil", "countrySlug": "brasil", "year": 2000, "yearLabel": "2000", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/sao-paulo-2000-local.jpeg", "price": 74900, "stock": {"S": 1, "M": 2, "L": 0, "XL": 1}, "totalStock": 4}, {"id": 123, "name": "São Paulo Visitante 2000", "slug": "sao-paulo-visitante-2000-122", "entity": "São Paulo", "entitySlug": "sao-paulo", "entityType": "club", "country": "Brasil", "countrySlug": "brasil", "year": 2000, "yearLabel": "2000", "decade": 2000, "type": "visitante", "typeLabel": "Visitante", "typeRaw": "Visitante", "image": "assets/sao-paulo-2000-visitante.jpeg", "price": 74900, "stock": {"S": 3, "M": 0, "L": 2, "XL": 0}, "totalStock": 5}, {"id": 124, "name": "Sporting CP Local 2001", "slug": "sporting-cp-local-2001-123", "entity": "Sporting CP", "entitySlug": "sporting-cp", "entityType": "club", "country": "Portugal", "countrySlug": "portugal", "year": 2001, "yearLabel": "2001", "decade": 2000, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/sporting-cp-2001-local.jpeg", "price": 74900, "stock": {"S": 3, "M": 1, "L": 2, "XL": 2}, "totalStock": 8}, {"id": 125, "name": "Vasco da Gama Local 1999-2000", "slug": "vasco-da-gama-local-1999-2000-124", "entity": "Vasco da Gama", "entitySlug": "vasco-da-gama", "entityType": "club", "country": "Brasil", "countrySlug": "brasil", "year": 1999, "yearLabel": "1999-2000", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/vasco-da-gama-1999-2000-local.jpeg", "price": 74900, "stock": {"S": 2, "M": 1, "L": 2, "XL": 2}, "totalStock": 7}, {"id": 126, "name": "West Ham United Local 1999-2001", "slug": "west-ham-united-local-1999-2001-125", "entity": "West Ham United", "entitySlug": "west-ham-united", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 1999, "yearLabel": "1999-2001", "decade": 1990, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/west-ham-united-1999-2001-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 1, "L": 0, "XL": 0}, "totalStock": 1}, {"id": 127, "name": "Wolverhampton Wanderers Local 2024-2025", "slug": "wolverhampton-wanderers-local-2024-2025-126", "entity": "Wolverhampton Wanderers", "entitySlug": "wolverhampton-wanderers", "entityType": "club", "country": "Inglaterra", "countrySlug": "inglaterra", "year": 2024, "yearLabel": "2024-2025", "decade": 2020, "type": "local", "typeLabel": "Local", "typeRaw": "Local", "image": "assets/wolverhampton-wanderers-2024-2025-local.jpeg", "price": 74900, "stock": {"S": 0, "M": 2, "L": 2, "XL": 2}, "totalStock": 6}];
+
+const TYPE_LABELS = {local:'Local', visitante:'Visitante', tercera:'Tercera', cuarta:'Cuarta', portero:'Portero', especial:'Especial'};
+const SIZES = ['S','M','L','XL'];
+
+function stockLabel(total){
+  if(total===0) return {cls:'out', text:'Agotado'};
+  if(total<=4) return {cls:'low', text:'Pocas unidades'};
+  return null;
+}
+
+/* ---------- derivación dinámica ---------- */
+function selecciones(){ return unique(PRODUCTS.filter(p=>p.entityType==='selection').map(p=>p.entity)).sort(); }
+function clubesPorPais(){
+  const clubs = unique(PRODUCTS.filter(p=>p.entityType==='club').map(p=>p.entity));
+  const byCountry = {};
+  clubs.forEach(c=>{
+    const prod = PRODUCTS.find(p=>p.entity===c);
+    byCountry[prod.country] = byCountry[prod.country] || [];
+    byCountry[prod.country].push(c);
   });
+  Object.keys(byCountry).forEach(k=>byCountry[k].sort());
+  return byCountry;
+}
+function countries(){ return unique(PRODUCTS.map(p=>p.country)).sort(); }
+function entityTypesFor(entitySlug){ return unique(PRODUCTS.filter(p=>p.entitySlug===entitySlug).map(p=>p.type)); }
+function countProducts(matchFn){ return PRODUCTS.filter(matchFn).length; }
 
-  // Ranking (top 3)
-  const top3 = teams.slice(0,3);
-  document.getElementById('rankingGrid').innerHTML = top3.map((t,i)=>`
-    <div class="rank-card">
-      <div class="rank-num">${i+1}</div>
-      <div class="rank-img" style="background:${t.grad}"></div>
-      <div class="rank-body"><h4>${t.name} · ${t.type}</h4><span>Conjunto completo · $39.900</span></div>
+/* ---------- estado de filtros (combinables) ---------- */
+let state = { country:null, entitySlug:null, type:null, decade:null, query:'' };
+
+function matches(p, s){
+  if(s.country && p.countrySlug!==s.country) return false;
+  if(s.entitySlug && p.entitySlug!==s.entitySlug) return false;
+  if(s.type && p.type!==s.type) return false;
+  if(s.decade && p.decade!==s.decade) return false;
+  if(s.query){
+    const terms = s.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    const hay = `${p.name} ${p.entity} ${p.country} ${p.type} ${p.typeRaw} ${p.yearLabel}`.toLowerCase();
+    if(!terms.every(t=>hay.includes(t))) return false;
+  }
+  return true;
+}
+
+/* =========================================================================
+   MEGA MENÚ (desktop)
+   ========================================================================= */
+function renderDesktopNav(){
+  const secc = selecciones();
+  const clubsByCountry = clubesPorPais();
+
+  const seccCols = secc.map(s=>{
+    const slug = slugify(s);
+    const n = countProducts(p=>p.entitySlug===slug);
+    return `<a class="mega-link" href="#/seleccion/${slug}">${s} <span class="count">(${n})</span></a>`;
+  }).join('');
+
+  const clubCols = Object.keys(clubsByCountry).sort().map(country=>{
+    const items = clubsByCountry[country].map(c=>{
+      const slug = slugify(c);
+      const n = countProducts(p=>p.entitySlug===slug);
+      return `<a class="mega-link" href="#/club/${slug}">${c} <span class="count">(${n})</span></a>`;
+    }).join('');
+    return `<div class="mega-country-group"><h6>${country}</h6><div class="mega-list">${items}</div></div>`;
+  }).join('');
+
+  const countryLinks = countries().map(c=>{
+    const slug = slugify(c);
+    return `<a class="mega-link" href="#/pais/${slug}">${c} <span class="count">(${countProducts(p=>p.countrySlug===slug)})</span></a>`;
+  }).join('');
+
+  document.getElementById('desktopNav').innerHTML = `
+    <a href="#/catalogo">Catálogo</a>
+    <div class="nav-item" tabindex="0">
+      <button>Selecciones <span class="caret">▾</span></button>
+      <div class="mega-menu">
+        <div class="mega-col"><h6>Selecciones</h6><div class="mega-list">${seccCols}</div></div>
+        <div class="mega-col"><h6>Explorar</h6><div class="mega-list"><a class="mega-link" href="#/selecciones">Todas las selecciones</a></div></div>
+      </div>
+    </div>
+    <div class="nav-item" tabindex="0">
+      <button>Clubes <span class="caret">▾</span></button>
+      <div class="mega-menu">
+        <div class="mega-col"><h6>Clubes por país</h6>${clubCols}</div>
+        <div class="mega-col"><h6>Explorar por país</h6><div class="mega-list">${countryLinks}</div></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderMobileNav(){
+  const secc = selecciones();
+  const clubsByCountry = clubesPorPais();
+  const seccLinks = secc.map(s=>`<a href="#/seleccion/${slugify(s)}" onclick="closeMobileMenu()">${s}</a>`).join('');
+  const clubBlocks = Object.keys(clubsByCountry).sort().map(country=>{
+    const items = clubsByCountry[country].map(c=>`<a href="#/club/${slugify(c)}" onclick="closeMobileMenu()">${c}</a>`).join('');
+    return `<div class="mobile-sub-title">${country}</div>${items}`;
+  }).join('');
+  document.getElementById('mobileAccordion').innerHTML = `
+    <div class="mobile-acc"><button onclick="toggleAcc(this)"><span>Catálogo</span></button>
+      <div class="mobile-acc-panel"><a href="#/catalogo" onclick="closeMobileMenu()">Toda la colección</a></div>
+    </div>
+    <div class="mobile-acc"><button onclick="toggleAcc(this)"><span>Selecciones</span><span class="plus">+</span></button>
+      <div class="mobile-acc-panel">${seccLinks}</div>
+    </div>
+    <div class="mobile-acc"><button onclick="toggleAcc(this)"><span>Clubes</span><span class="plus">+</span></button>
+      <div class="mobile-acc-panel">${clubBlocks}</div>
+    </div>
+  `;
+}
+function toggleAcc(btn){ btn.parentElement.classList.toggle('open'); }
+
+/* =========================================================================
+   ROUTING
+   ========================================================================= */
+function parseHash(){
+  const h = location.hash.replace(/^#\/?/,'').split('?')[0];
+  return h.split('/').filter(Boolean);
+}
+function setMeta(title, desc){
+  document.getElementById('pageTitle').textContent = title;
+  document.getElementById('pageDesc').setAttribute('content', desc);
+}
+
+function router(){
+  const parts = parseHash();
+  state = { country:null, entitySlug:null, type:null, decade:null, query:state.query||'' };
+  let banner = null;
+
+  if(parts.length===0 || parts[0]==='catalogo'){
+    setMeta('Colección Retro | S55','Explora todas las camisetas retro de clubes y selecciones disponibles en S55.');
+    banner = {title:'Toda la colección', sub:'Camisetas retro de clubes y selecciones históricas. Disponibilidad limitada por talla.', crumbs:[['Inicio','#/'],['Catálogo',null]]};
+  } else if(parts[0]==='selecciones'){
+    setMeta('Selecciones | S55','Camisetas retro de selecciones nacionales en S55.');
+    banner = {title:'Selecciones', sub:'Elige una selección para ver todas sus camisetas retro disponibles.', crumbs:[['Inicio','#/'],['Selecciones',null]], listSelecciones:true};
+  } else if(parts[0]==='clubes'){
+    setMeta('Clubes | S55','Camisetas retro de clubes de fútbol en S55.');
+    banner = {title:'Clubes', sub:'Elige un club para ver todas sus camisetas retro disponibles.', crumbs:[['Inicio','#/'],['Clubes',null]], listClubes:true};
+  } else if(parts[0]==='pais' && parts[1]){
+    state.country = parts[1];
+    const prod = PRODUCTS.find(p=>p.countrySlug===parts[1]);
+    const label = prod ? prod.country : parts[1];
+    setMeta(`Retro de ${label} | S55`, `Camisetas retro de clubes y selecciones de ${label} en S55.`);
+    banner = {title:label, sub:`Todas las camisetas retro de ${label} disponibles en la colección.`, crumbs:[['Inicio','#/'],[label,null]]};
+  } else if((parts[0]==='club' || parts[0]==='seleccion') && parts[1]){
+    state.entitySlug = parts[1];
+    const prod = PRODUCTS.find(p=>p.entitySlug===parts[1]);
+    const label = prod ? prod.entity : parts[1];
+    const country = prod ? prod.country : '';
+    const isClub = parts[0]==='club';
+    setMeta(`Camisetas retro de ${label} | S55`, `Explora las camisetas retro de ${label} disponibles en S55.`);
+    banner = {
+      title: label,
+      sub: `Camisetas retro de ${label}${isClub? ' · '+country : ''}.`,
+      crumbs:[['Inicio','#/'],[isClub?'Clubes':'Selecciones', isClub?'#/clubes':'#/selecciones'],[label,null]],
+      entitySlug: parts[1]
+    };
+  } else {
+    setMeta('S55 · Camisetas Retro — Colección de fútbol clásico','Camisetas retro de fútbol de clubes y selecciones históricas. Disponibilidad limitada por talla.');
+  }
+
+  renderShop(banner);
+  if(parts.length){ document.getElementById('catalogo').scrollIntoView({behavior:'smooth'}); }
+}
+
+/* =========================================================================
+   RENDER: banner + filtros + grid
+   ========================================================================= */
+function renderShop(banner){
+  const bannerEl = document.getElementById('shopBanner');
+  if(!banner){
+    bannerEl.innerHTML = `<div class="crumb-row"><a href="#/">Inicio</a></div><h1>Colección <em>Retro</em></h1><p class="sub">Camisetas retro de clubes y selecciones. Disponibilidad limitada por talla.</p>`;
+  } else {
+    const crumbs = banner.crumbs.map(([label,href])=> href ? `<a href="${href}">${label}</a>` : `<span>${label}</span>`).join('<span class="sep">/</span>');
+    let chipRow = '';
+    if(banner.entitySlug){
+      const types = entityTypesFor(banner.entitySlug);
+      const chips = ['all', ...types].map(t=>{
+        const active = (t==='all' && !state.type) || state.type===t;
+        const label = t==='all' ? 'Todos' : (TYPE_LABELS[t]||t);
+        const n = t==='all' ? countProducts(p=>p.entitySlug===banner.entitySlug) : countProducts(p=>p.entitySlug===banner.entitySlug && p.type===t);
+        return `<button class="chip ${active?'active':''}" onclick="setEntityType('${banner.entitySlug}','${t}')">${label} <span class="count">${n}</span></button>`;
+      }).join('');
+      chipRow = `<div class="chip-row">${chips}</div>`;
+    }
+    if(banner.listSelecciones){
+      chipRow = `<div class="chip-row">${selecciones().map(s=>{const slug=slugify(s);return `<a class="chip" href="#/seleccion/${slug}">${s} <span class="count">${countProducts(p=>p.entitySlug===slug)}</span></a>`;}).join('')}</div>`;
+    }
+    if(banner.listClubes){
+      const clubs = unique(PRODUCTS.filter(p=>p.entityType==='club').map(p=>p.entity)).sort();
+      chipRow = `<div class="chip-row">${clubs.map(c=>{const slug=slugify(c);return `<a class="chip" href="#/club/${slug}">${c} <span class="count">${countProducts(p=>p.entitySlug===slug)}</span></a>`;}).join('')}</div>`;
+    }
+    const words = banner.title.split(' ');
+    const titledHtml = words.map((w,i)=> i===words.length-1 ? `<em>${w}</em>` : w).join(' ');
+    bannerEl.innerHTML = `<div class="crumb-row">${crumbs}</div><h1>${titledHtml}</h1><p class="sub">${banner.sub}</p>${chipRow}`;
+  }
+  renderFilters();
+  renderGrid();
+}
+
+function setEntityType(entitySlug, type){
+  state.entitySlug = entitySlug;
+  state.type = type==='all' ? null : type;
+  const prod = PRODUCTS.find(p=>p.entitySlug===entitySlug);
+  const isClub = prod.entityType==='club';
+  renderShop({
+    title: prod.entity,
+    sub: `Camisetas retro de ${prod.entity}${isClub? ' · '+prod.country : ''}.`,
+    crumbs:[['Inicio','#/'],[isClub?'Clubes':'Selecciones', isClub?'#/clubes':'#/selecciones'],[prod.entity,null]],
+    entitySlug
+  });
+}
+
+function renderFilters(){
+  const types = unique(PRODUCTS.map(p=>p.type));
+  const ctys = countries();
+  const decades = unique(PRODUCTS.map(p=>p.decade)).filter(Boolean).sort((a,b)=>a-b);
+
+  function opt(label, active, onclick, count){
+    return `<label class="fopt ${active?'active-opt':''}" onclick="${onclick};return false;">
+      <input type="checkbox" ${active?'checked':''} readonly><span>${label}${count!==undefined?` (${count})`:''}</span>
+    </label>`;
+  }
+
+  document.getElementById('filterBody').innerHTML = `
+    <div class="fgroup">
+      <div class="fgroup-label">País</div>
+      ${ctys.map(c=>{const slug=slugify(c);return opt(c, state.country===slug, `filterToggle('country','${slug}')`, countProducts(p=>matches(p,{...state,country:slug===state.country?null:slug})));}).join('')}
+    </div>
+    <div class="fgroup">
+      <div class="fgroup-label">Tipo</div>
+      ${types.map(t=>opt(TYPE_LABELS[t]||t, state.type===t, `filterToggle('type','${t}')`, countProducts(p=>matches(p,{...state,type:t===state.type?null:t})))).join('')}
+    </div>
+    <div class="fgroup">
+      <div class="fgroup-label">Década</div>
+      ${decades.map(d=>opt(`${d}s`, state.decade===d, `filterToggle('decade',${d})`, countProducts(p=>matches(p,{...state,decade:d===state.decade?null:d})))).join('')}
+    </div>
+    <div class="clear-filters" onclick="clearFilters()">Limpiar filtros</div>
+  `;
+}
+
+function filterToggle(key, value){
+  state[key] = state[key]===value ? null : value;
+  renderFilters();
+  renderGrid();
+  closeFilterPanel();
+}
+function clearFilters(){
+  state = {country:null, entitySlug:state.entitySlug, type:null, decade:null, query:''};
+  document.getElementById('headerSearch').value='';
+  document.getElementById('mobileSearch').value='';
+  renderFilters();
+  renderGrid();
+}
+
+function sizeChips(p){
+  return SIZES.map(sz=>{
+    return `<button type="button" class="size-chip avail" title="Preguntar disponibilidad de la talla ${sz} por WhatsApp" onclick="orderSizeOnWhatsapp(${p.id},'${sz}')">${sz}</button>`;
+  }).join('');
+}
+
+// Sends a WhatsApp message asking to confirm availability of the exact size tapped.
+function orderSizeOnWhatsapp(productId, size){
+  const p = PRODUCTS.find(x=>x.id===productId);
+  if(!p) return;
+  const msg = `Hola! Quiero la camiseta ${p.entity} ${p.typeRaw} ${p.yearLabel} talla ${size} (S55). ¿Me confirmas si está disponible?`;
+  window.open(`https://wa.me/573107820698?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+function renderGrid(){
+  let list = PRODUCTS.filter(p=>matches(p,state));
+  const grid = document.getElementById('catalogGrid');
+  if(list.length===0){
+    grid.innerHTML = `<div class="empty-state">No encontramos camisetas con esos filtros. <span style="color:var(--red);cursor:pointer;text-decoration:underline" onclick="clearFilters()">Limpiar filtros</span></div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p=>{
+    const sl = stockLabel(p.totalStock);
+    return `
+    <div class="cat-card">
+      <div class="cat-img">
+        ${sl?`<span class="badge ${sl.cls}">${sl.text}</span>`:''}
+        <img src="${p.image}" alt="${p.name}" loading="lazy">
+      </div>
+      <div class="cat-body">
+        <h4>${p.entity} · ${p.typeRaw}</h4>
+        <div class="meta">${p.country} · ${p.yearLabel}</div>
+        <div class="price">$${p.price.toLocaleString('es-CO')}</div>
+        <div class="size-row">${sizeChips(p)}</div>
+        <div class="scarcity-note">Todas las tallas disponibles para preguntar — toca una y confirmamos por WhatsApp</div>
+      </div>
+    </div>`;
+  }).join('');
+  revealCards();
+}
+
+// Scroll-reveal: cards fade/slide in the first time they enter the viewport.
+let cardObserver = null;
+function revealCards(){
+  if(!cardObserver){
+    cardObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+  }
+  document.querySelectorAll('.cat-card:not(.in-view)').forEach(el=>cardObserver.observe(el));
+}
+
+/* =========================================================================
+   BÚSQUEDA
+   ========================================================================= */
+function wireSearch(inputId){
+  const el = document.getElementById(inputId);
+  el.addEventListener('input', ()=>{
+    state.query = el.value;
+    if(location.hash.replace(/^#\/?/,'')===''){ location.hash = '#/catalogo'; }
+    renderGrid();
+  });
+}
+
+/* =========================================================================
+   POCAS UNIDADES / GALERÍAS ESTÁTICAS
+   ========================================================================= */
+function renderRanking(){
+  const low = PRODUCTS.filter(p=>p.totalStock>0 && p.totalStock<=3).sort((a,b)=>a.totalStock-b.totalStock).slice(0,2);
+  const favs = low.length===2 ? low : PRODUCTS.slice(0,2);
+  document.getElementById('rankingGrid').innerHTML = favs.map(p=>`
+    <div class="rank-card reveal">
+      <div class="rank-img"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
+      <div class="rank-body"><h4>${p.entity} · ${p.typeRaw}</h4><span>${p.yearLabel} · $${p.price.toLocaleString('es-CO')}</span><span>Quedan ${p.totalStock} unidades en total</span></div>
     </div>`).join('');
+}
+function renderHeroGallery(){
+  const picks = [PRODUCTS[3], PRODUCTS[20], PRODUCTS[45], PRODUCTS[70]].filter(Boolean);
+  document.getElementById('heroGallery').innerHTML = picks.map(p=>`<img src="${p.image}" alt="${p.name}" loading="lazy">`).join('');
+}
+function renderCalidadGallery(){
+  const picks = [PRODUCTS[10], PRODUCTS[30], PRODUCTS[55], PRODUCTS[90]].filter(Boolean);
+  document.getElementById('calidadGallery').innerHTML = picks.map(p=>`<img src="${p.image}" alt="${p.name}" loading="lazy">`).join('');
+}
 
-  // FAQ
+/* =========================================================================
+   MARQUEE / FAQ
+   ========================================================================= */
+function renderMarquee(){
+  const items = ["Camisetas retro originales de época","Stock real por talla","Piezas de colección","Envíos a toda el Área Metropolitana de Bucaramanga"];
+  const html = items.map(t=>`<span>${t}</span><span class="dot">◆</span>`).join('');
+  document.getElementById('marquee').innerHTML = html + html;
+}
+function renderFaq(){
   const faqs = [
-    ["¿Cuál es el pedido mínimo?","Ninguno. El precio por mayor de $39.900 aplica desde la primera unidad. A partir de 5 conjuntos el precio baja a $34.900 cada uno."],
-    ["¿Puedo mezclar equipos y tallas para el descuento?","Sí. El descuento se calcula sobre el total de conjuntos del pedido, sin importar que sean de equipos o tallas distintas."],
-    ["¿Qué incluye cada conjunto?","Camiseta y pantaloneta del mismo equipo, con escudos bordados y patrocinios estampados tal como se ven en las fotos del catálogo."],
-    ["¿Hacen numeración y nombre?","No. No manejamos personalización: los conjuntos se entregan tal como aparecen en las fotos del catálogo, con los escudos y patrocinios originales del uniforme."],
+    ["¿Las tallas están siempre disponibles?","No. Cada camiseta retro muestra el stock real por talla. Cuando una talla se agota en una referencia, puede no volver a llegar."],
+    ["¿Las camisetas incluyen pantaloneta?","No. La colección retro se vende únicamente por camiseta."],
+    ["¿Qué significa 'edición especial'?","Son versiones de finales, aniversarios o ediciones limitadas de esa temporada — su precio es distinto al de una camiseta retro estándar."],
     ["¿Cómo se paga?","Coordinamos el pago por WhatsApp al confirmar el pedido: transferencia, Nequi o efectivo contra entrega dentro del área metropolitana."],
     ["¿Cuánto tarda la entrega?","Los conjuntos disponibles se entregan en 1 a 3 días hábiles dentro del área metropolitana de Bucaramanga. Coordinamos el día y el punto de entrega por WhatsApp."]
   ];
-  document.getElementById('faqList').innerHTML = faqs.map(([q,a],i)=>`
+  document.getElementById('faqList').innerHTML = faqs.map(([q,a])=>`
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${q}<span class="plus">+</span></div>
       <div class="faq-a">${a}</div>
     </div>`).join('');
+}
 
-  // Cart drawer (visual only)
-  function openCart(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open')}
-  function closeCart(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open')}
+/* =========================================================================
+   UI: carrito, menú móvil, panel de filtros
+   ========================================================================= */
+function openCart(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open')}
+function closeCart(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open')}
+function openMobileMenu(){document.getElementById('mdrawer').classList.add('open');document.getElementById('mdrawerOverlay').classList.add('open')}
+function closeMobileMenu(){document.getElementById('mdrawer').classList.remove('open');document.getElementById('mdrawerOverlay').classList.remove('open')}
+function openFilterPanel(){document.getElementById('filterSidebar').classList.add('open')}
+function closeFilterPanel(){document.getElementById('filterSidebar').classList.remove('open')}
+
+/* =========================================================================
+   ANIMACIONES: revelado de secciones al hacer scroll
+   ========================================================================= */
+function revealSections(){
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}
+
+/* =========================================================================
+   INIT
+   ========================================================================= */
+renderMarquee();
+renderFaq();
+renderRanking();
+renderHeroGallery();
+renderCalidadGallery();
+renderDesktopNav();
+renderMobileNav();
+revealSections();
+wireSearch('headerSearch');
+wireSearch('mobileSearch');
+window.addEventListener('hashchange', router);
+router();
 </script>
 
 </body>
